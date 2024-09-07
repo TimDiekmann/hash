@@ -31,7 +31,6 @@
   "assigneesFromCodeOwners": true,
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
-  "rangeStrategy": "pin",
   "packageRules": [
     {
       "extends": ["packages:linters", "packages:test"],
