@@ -23,6 +23,15 @@ on:
         description: "Override all schedules"
         type: boolean
         default: false
+      dryRun:
+        description: "Run in dry run mode"
+        type: choice
+        default: no
+        options:
+          - no
+          - extract
+          - lookup
+          - full
 #  schedule:
     # Run every 30 minutes
 #    - cron: "0/30 * * * *"
@@ -100,6 +109,7 @@ jobs:
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
+          RENOVATE_DRY_RUN: ${{ inputs.dryRun == 'no' && '' || inputs.dryRun || '' }}
           RENOVATE_PLATFORM_COMMIT: "true"
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # This enables the cache -- if this is set, it's not necessary to add it to renovate.json.
