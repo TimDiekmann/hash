@@ -91,7 +91,9 @@ jobs:
           toolchain: nightly-2024-09-02
 
       - name: Print cargo version
-        run: ${{ env.HOME }}/.cargo/bin/cargo --version
+        run: |
+          which cargo
+          cargo --version
 
       - name: Run renovate
         uses: renovatebot/github-action@630a255a1f2f56c8d8ce160bed3e3ca577ca53e2 # v40.2.7
