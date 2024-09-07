@@ -32,9 +32,9 @@ on:
           - extract
           - lookup
           - full
-#  schedule:
-# Run every 30 minutes
-#    - cron: "0/30 * * * *"
+  schedule:
+    #Run every 30 minutes
+    - cron: "0/30 * * * *"
 
 env:
   cache_archive: renovate_cache.tar.gz
