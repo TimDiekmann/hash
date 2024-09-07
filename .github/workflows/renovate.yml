@@ -20,7 +20,9 @@ on:
 #  schedule:
     # Run every 30 minutes
 #    - cron: "0/30 * * * *"
-concurrency: renovate
+concurrency:
+  cancel-in-progress: true
+  group: renovate
 jobs:
   renovate:
     runs-on: ubuntu-latest
@@ -30,7 +32,7 @@ jobs:
         uses: tibdex/github-app-token@021a2405c7f990db57f5eae5397423dcc554159c # v1.7.0
         with:
           app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.RENOVATE_TOKEN }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Checkout
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
