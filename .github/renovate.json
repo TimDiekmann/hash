@@ -15,7 +15,7 @@
     }
   ],
   "constraints": {
-    "rust": "nightly-2024-09-02"
+    "rust": "1.83"
   },
   "automerge": true,
   "branchPrefix": "deps/",
