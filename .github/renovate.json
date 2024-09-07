@@ -16,7 +16,7 @@
   ],
   "constraints": {
     "rust": "nightly"
-  }
+  },
   "automerge": true,
   "branchPrefix": "deps/",
   "configMigration": true,
