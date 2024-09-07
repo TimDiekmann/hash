@@ -29,8 +29,9 @@
   "semanticCommits": "disabled",
   "schedule": ["before 4am every weekday", "every weekend"],
   "assigneesFromCodeOwners": true,
-  "prConcurrentLimit": 15,
+  "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
+  "rangeStrategy": "widen",
   "packageRules": [
     {
       "extends": ["packages:linters", "packages:test"],
