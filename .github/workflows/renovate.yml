@@ -40,6 +40,7 @@ env:
   cache_archive: renovate_cache.tar.gz
   cache_dir: /tmp/renovate/cache/renovate/repository
   cache_key: renovate-cache
+  dry_run: ${{ github.event.inputs.dryRun || 'disabled' }}
 
 concurrency:
   cancel-in-progress: true
@@ -92,7 +93,7 @@ jobs:
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
-          RENOVATE_DRY_RUN: ${{ inputs.dryRun == 'disabled' && 'null' || inputs.dryRun }}
+          RENOVATE_DRY_RUN: ${{ env.dry_run == 'disabled' && 'null' || inputs.dryRun }}
           RENOVATE_PLATFORM_COMMIT: enabled
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
@@ -104,7 +105,7 @@ jobs:
         run: tar -czvf $cache_archive -C $cache_dir .
 
       - uses: actions/upload-artifact@v3
-        if: github.event.inputs.repoCache != 'disabled'
+        if: env.dry_run == 'disabled' && github.event.inputs.repoCache != 'disabled'
         with:
           name: ${{ env.cache_key }}
           path: ${{ env.cache_archive }}
