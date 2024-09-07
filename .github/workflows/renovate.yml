@@ -103,11 +103,9 @@ jobs:
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
           RENOVATE_DRY_RUN: ${{ inputs.dryRun == 'disabled' && 'null' || inputs.dryRun }}
           RENOVATE_PLATFORM_COMMIT: enabled
-          RENOVATE_USERNAME: HASH[bot]
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
           RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
-          RENOVATE_CONFIG_MIGRATION: true
 
       # Compression helps performance in the upload step!
       - name: Compress renovate cache
