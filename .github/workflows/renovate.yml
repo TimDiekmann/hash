@@ -10,7 +10,7 @@ on:
           - enabled
           - disabled
           - reset
-      log_level:
+      logLevel:
         description: "Override default log level"
         type: choice
         default: info
@@ -19,11 +19,11 @@ on:
           - "info"
           - "warn"
           - "error"
-      override_schedule:
+      overrideSchedule:
         description: "Override all schedules"
         type: boolean
         default: false
-      dry_run:
+      dryRun:
         description: "Dry run mode"
         type: choice
         default: disabled
@@ -40,10 +40,6 @@ env:
   cache_archive: renovate_cache.tar.gz
   cache_dir: /tmp/renovate/cache/renovate/repository
   cache_key: renovate-cache
-  repo_cache: ${{ github.event.inputs.repo_cache || 'enabled' }}
-  log_level: ${{ github.event.inputs.log_level || 'info' }}
-  override_schedule: ${{ github.event.inputs.override_schedule || 'false' }}
-  dry_run: ${{ inputs.dry_run == 'disabled' && 'null' || inputs.dryRun }}
 
 concurrency:
   cancel-in-progress: true
@@ -66,14 +62,13 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
 
       - uses: dawidd6/action-download-artifact@v2
-        if: env.repo_cache == 'enabled'
+        if: github.event.inputs.repoCache != 'disabled'
         continue-on-error: true
         with:
           name: ${{ env.cache_key }}
           path: cache-download
 
       - name: Extract renovate cache
-        if: env.repo_cache == 'enabled'
         run: |
           if [ ! -d cache-download ] ; then
             echo "No cache found."
@@ -92,19 +87,21 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           configurationFile: .github/renovate.json
         env:
-          LOG_LEVEL: ${{ env.log_level }}
-          RENOVATE_FORCE: ${{ env.override_schedule == 'true' && '{"schedule":null}' || '' }}
-          RENOVATE_DRY_RUN: ${{ env.dry_run }}
+          LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
+          RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
+          RENOVATE_DRY_RUN: ${{ inputs.dryRun == 'disabled' && 'null' || inputs.dryRun }}
           RENOVATE_PLATFORM_COMMIT: enabled
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
-          RENOVATE_REPOSITORY_CACHE: ${{ env.repo_cache }}
+          RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
+          RENOVATE_ALLOWED_ENV: '["RUSTUP_TOOLCHAIN"]'
+          RENOVATE_ENV: '{"RUSTUP_TOOLCHAIN":"nightly"}'
 
       - name: Compress renovate cache
         run: tar -czvf $cache_archive -C $cache_dir .
 
       - uses: actions/upload-artifact@v3
-        if: env.repo_cache != 'disabled'
+        if: github.event.inputs.repoCache != 'disabled'
         with:
           name: ${{ env.cache_key }}
           path: ${{ env.cache_archive }}
