@@ -66,6 +66,15 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
 
+      - name: Install Rust toolchain
+        uses: ./.github/actions/install-rust-toolchain
+        with:
+          toolchain: nightly-2024-09-02
+
+      - name: Change owner for cargo
+        if: github.event.inputs.repoCache != 'disabled'
+        run: sudo chown -R runneradmin:root /home/runner/.cargo/
+
       - uses: dawidd6/action-download-artifact@268677152d06ba59fcec7a7f0b5d961b6ccd7e1e # v2
         if: github.event.inputs.repoCache != 'disabled'
         continue-on-error: true
@@ -74,6 +83,7 @@ jobs:
           path: cache-download
 
       - name: Extract renovate cache
+        if: github.event.inputs.repoCache != 'disabled'
         run: |
           if [ ! -d cache-download ] ; then
             echo "No cache found."
@@ -84,24 +94,6 @@ jobs:
           tar -xzf cache-download/$cache_archive -C $cache_dir
 
           sudo chown -R runneradmin:root /tmp/renovate/
-          ls -R $cache_dir
-
-      - name: Install Rust toolchain
-        uses: ./.github/actions/install-rust-toolchain
-        with:
-          toolchain: nightly-2024-09-02
-
-      - name: Extract renovate cache
-        run: |
-          if [ ! -d cache-download ] ; then
-            echo "No cache found."
-            exit 0
-          fi
-
-          mkdir -p $cache_dir
-          tar -xzf cache-download/$cache_archive -C $cache_dir
-
-          sudo chown -R runneradmin:root /tmp/renovate/ /home/runner/.cargo/
           ls -R $cache_dir
           ls -R /home/runner/.cargo/
 
@@ -127,8 +119,8 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           configurationFile: .github/renovate.json
-          docker-cmd-file: .github/renovate-entrypoint.sh
-          docker-user: root
+          #          docker-cmd-file: .github/renovate-entrypoint.sh
+          #          docker-user: root
           docker-volumes: |
             /tmp:/tmp ;
             /home/runner/.cargo:/home/ubuntu/.cargo ;
