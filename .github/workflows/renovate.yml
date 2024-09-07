@@ -45,6 +45,9 @@ concurrency:
   cancel-in-progress: true
   group: renovate
 
+permissions:
+  contents: write
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
