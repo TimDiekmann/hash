@@ -15,7 +15,7 @@
     }
   ],
   "constraints": {
-    "rust": "1.83"
+    "rust": "1.83.0"
   },
   "automerge": true,
   "branchPrefix": "deps/",
