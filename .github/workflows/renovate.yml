@@ -93,10 +93,6 @@ jobs:
           mkdir -p $cache_dir
           tar -xzf cache-download/$cache_archive -C $cache_dir
 
-          sudo chown -R runneradmin:root /tmp/renovate/
-          ls -R $cache_dir
-          ls -R /home/runner/.cargo/
-
       - name: Install renovate
         run: npm install -g renovate
 
