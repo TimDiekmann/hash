@@ -95,9 +95,11 @@ jobs:
         with:
           token: ${{ steps.app-token.outputs.token }}
           configurationFile: .github/renovate.json
+          docker-cmd-file: .github/renovate-entrypoint.sh
+          docker-user: root
           docker-volumes: |
             /tmp:/tmp ;
-            /${{ env.HOME }}/.cargo:/home/.cargo ; ;
+            /${{ env.HOME }}/.cargo:/home/.cargo ;
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
@@ -106,8 +108,8 @@ jobs:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
           RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
-          RENOVATE_ALLOWED_ENV: '["RUSTUP_TOOLCHAIN","CARGO","PATH"]'
-          RENOVATE_ENV: '{"RUSTUP_TOOLCHAIN":"nightly","CARGO":"/home/.cargo/bin/cargo","PATH":"/home/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
+      #          RENOVATE_ALLOWED_ENV: '["RUSTUP_TOOLCHAIN","CARGO","PATH"]'
+      #          RENOVATE_ENV: '{"RUSTUP_TOOLCHAIN":"nightly","CARGO":"/home/.cargo/bin/cargo","PATH":"/home/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
 
       - name: Compress renovate cache
         run: tar -czvf $cache_archive -C $cache_dir .
