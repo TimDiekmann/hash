@@ -15,7 +15,7 @@
     }
   ],
   "constraints": {
-    "rust": "nightly"
+    "rust": "nightly-2024-09-02"
   },
   "automerge": true,
   "branchPrefix": "deps/",
@@ -34,7 +34,6 @@
   "assigneesFromCodeOwners": true,
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
-  "prCommitsPerRunLimit": 0,
   "branchConcurrentLimit": 0,
   "packageRules": [
     {
