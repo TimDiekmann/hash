@@ -30,6 +30,8 @@
   "schedule": ["before 4am every weekday", "every weekend"],
   "assigneesFromCodeOwners": true,
   "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "prCommitsPerRunLimit": 0,
   "branchConcurrentLimit": 0,
   "packageRules": [
     {
