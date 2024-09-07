@@ -90,6 +90,20 @@ jobs:
         with:
           toolchain: nightly-2024-09-02
 
+      - name: Extract renovate cache
+        run: |
+          if [ ! -d cache-download ] ; then
+            echo "No cache found."
+            exit 0
+          fi
+
+          mkdir -p $cache_dir
+          tar -xzf cache-download/$cache_archive -C $cache_dir
+
+          sudo chown -R runneradmin:root /tmp/renovate/ /home/runner/.cargo/
+          ls -R $cache_dir
+          ls -R /home/runner/.cargo/
+
       - name: Print cargo version
         run: /home/runner/.cargo/bin/cargo --version
 
