@@ -99,7 +99,7 @@ jobs:
           docker-user: root
           docker-volumes: |
             /tmp:/tmp ;
-            /${{ env.HOME }}/.cargo:/home/.cargo ;
+            /${{ env.HOME }}/.cargo:/home/ubuntu/.cargo ;
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}

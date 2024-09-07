@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chown -r ubuntu:ubuntu /home/ubuntu/.cargo
+chown -R ubuntu:ubuntu /home/ubuntu/.cargo
 export PATH="/home/ubuntu/.cargo/bin:$PATH"
 
 runuser -u ubuntu cargo --version
