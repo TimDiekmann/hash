@@ -71,9 +71,9 @@ jobs:
         with:
           toolchain: nightly-2024-09-02
 
-      - name: Change owner for cargo
-        if: github.event.inputs.repoCache != 'disabled'
-        run: sudo chown -R runneradmin:root /home/runner/.cargo/
+      #      - name: Change owner for cargo
+      #        if: github.event.inputs.repoCache != 'disabled'
+      #        run: sudo chown -R runneradmin:root /home/runner/.cargo/
 
       - uses: dawidd6/action-download-artifact@268677152d06ba59fcec7a7f0b5d961b6ccd7e1e # v2
         if: github.event.inputs.repoCache != 'disabled'
@@ -97,33 +97,10 @@ jobs:
           ls -R $cache_dir
           ls -R /home/runner/.cargo/
 
-      - name: Print cargo version
-        run: /home/runner/.cargo/bin/cargo --version
-
       - name: Install renovate
         run: npm install -g renovate
 
-      #      - name: Run renovate
-      #        env:
-      #          LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
-      #          RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
-      #          RENOVATE_DRY_RUN: ${{ env.dry_run == 'disabled' && 'null' || inputs.dryRun }}
-      #          RENOVATE_PLATFORM_COMMIT: enabled
-      #          RENOVATE_REPOSITORIES: ${{ github.repository }}
-      #          # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
-      #          RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
-      #        run: renovate --token ${{ steps.app-token.outputs.token }}
-
       - name: Run renovate
-        uses: renovatebot/github-action@630a255a1f2f56c8d8ce160bed3e3ca577ca53e2 # v40.2.7
-        with:
-          token: ${{ steps.app-token.outputs.token }}
-          configurationFile: .github/renovate.json
-          #          docker-cmd-file: .github/renovate-entrypoint.sh
-          #          docker-user: root
-          docker-volumes: |
-            /tmp:/tmp ;
-            /home/runner/.cargo:/home/ubuntu/.cargo ;
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
@@ -132,8 +109,28 @@ jobs:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
           RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
-          RENOVATE_ALLOWED_ENV: '["PATH"]'
-          RENOVATE_ENV: '{"PATH":"/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
+        run: renovate --token ${{ steps.app-token.outputs.token }}
+
+      #      - name: Run renovate
+      #        uses: renovatebot/github-action@630a255a1f2f56c8d8ce160bed3e3ca577ca53e2 # v40.2.7
+      #        with:
+      #          token: ${{ steps.app-token.outputs.token }}
+      #          configurationFile: .github/renovate.json
+      #          #          docker-cmd-file: .github/renovate-entrypoint.sh
+      #          #          docker-user: root
+      #          docker-volumes: |
+      #            /tmp:/tmp ;
+      #            /home/runner/.cargo:/home/ubuntu/.cargo ;
+      #        env:
+      #          LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
+      #          RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
+      #          RENOVATE_DRY_RUN: ${{ env.dry_run == 'disabled' && 'null' || inputs.dryRun }}
+      #          RENOVATE_PLATFORM_COMMIT: enabled
+      #          RENOVATE_REPOSITORIES: ${{ github.repository }}
+      #          # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
+      #          RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
+      #          RENOVATE_ALLOWED_ENV: '["PATH"]'
+      #          RENOVATE_ENV: '{"PATH":"/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
 
       - uses: dkhmelenko/autoapproval@v1.0
         env:
