@@ -65,14 +65,12 @@
     {
       "matchManagers": ["npm"],
       "commitMessageTopic": "npm package `{{depName}}`",
-      "additionalBranchPrefix": "js/",
-      "assignees": ["CiaranMn"]
+      "additionalBranchPrefix": "js/"
     },
     {
       "matchManagers": ["cargo"],
       "commitMessageTopic": "Rust crate `{{depName}}`",
       "additionalBranchPrefix": "rs/",
-      "reviewers": ["team:Rust"],
       "dependencyDashboardApproval": false,
       "assignees": ["TimDiekmann"]
     },
@@ -162,8 +160,7 @@
       "automerge": false,
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["typescript"],
-      "dependencyDashboardApproval": false,
-      "assignees": ["CiaranMn"]
+      "dependencyDashboardApproval": false
     },
     {
       "matchManagers": ["npm"],
@@ -201,8 +198,7 @@
       "groupName": "Playwright npm packages",
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["^@playwright/", "^playwright", "playwright$"],
-      "dependencyDashboardApproval": false,
-      "assignees": ["CiaranMn"]
+      "dependencyDashboardApproval": false
     },
     {
       "groupName": "Prettier npm packages",
