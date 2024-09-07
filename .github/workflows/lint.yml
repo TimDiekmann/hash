@@ -47,9 +47,6 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     steps:
-      - name: Check setup script
-        run: |
-          [[ ${{ needs.setup.result }} = success ]]
       - name: Check global results
         run: |
           [[ ${{ needs.global.result }} =~ success|skipped ]]
