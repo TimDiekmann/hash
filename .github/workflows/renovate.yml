@@ -90,6 +90,9 @@ jobs:
         with:
           toolchain: nightly-2024-09-02
 
+      - name: Print cargo version
+        run: ${{ env.HOME }}/.cargo/bin/cargo --version
+
       - name: Run renovate
         uses: renovatebot/github-action@630a255a1f2f56c8d8ce160bed3e3ca577ca53e2 # v40.2.7
         with:
@@ -99,7 +102,7 @@ jobs:
           docker-user: root
           docker-volumes: |
             /tmp:/tmp ;
-            /${{ env.HOME }}/.cargo:/home/ubuntu/.cargo ;
+            ${{ env.HOME }}/.cargo:/home/ubuntu/.cargo ;
         env:
           LOG_LEVEL: ${{ inputs.logLevel || 'info' }}
           RENOVATE_FORCE: ${{ github.event.inputs.overrideSchedule == 'true' && '{"schedule":null}' || '' }}
@@ -109,7 +112,13 @@ jobs:
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
           RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
           RENOVATE_ALLOWED_ENV: '["PATH"]'
-          RENOVATE_ENV: '{"PATH":"/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
+          RENOVATE_ENV: '{"PATH":"/home/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
+
+      - uses: dkhmelenko/autoapproval@v1.0
+        with:
+          from_owner: "tim-s-renovate-test-app[bot]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
 
       - name: Compress renovate cache
         run: tar -czvf $cache_archive -C $cache_dir .
