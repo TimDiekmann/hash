@@ -43,7 +43,7 @@ env:
   dry_run: ${{ github.event.inputs.dryRun || 'disabled' }}
 
 concurrency:
-  cancel-in-progress: true
+  cancel-in-progress: false
   group: renovate
 
 permissions:
