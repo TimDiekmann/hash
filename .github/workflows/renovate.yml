@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       repoCache:
-        description: 'Reset or disable the cache?'
+        description: "Reset or disable the cache?"
         type: choice
         default: enabled
         options:
@@ -33,7 +33,7 @@ on:
           - lookup
           - full
 #  schedule:
-    # Run every 30 minutes
+# Run every 30 minutes
 #    - cron: "0/30 * * * *"
 
 # Adding these as env variables makes it easy to re-use them in different steps and in bash.
@@ -107,6 +107,7 @@ jobs:
           RENOVATE_REPOSITORIES: ${{ github.repository }}
           # TODO: Consider using S3 by setting `RENOVATE_REPOSITORY_CACHE_TYPE`
           RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
+          RENOVATE_CONFIG_MIGRATION: true
 
       # Compression helps performance in the upload step!
       - name: Compress renovate cache
