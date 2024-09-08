@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    if: github.actor == 'tim-s-renovate-test-app[bot]'
+    if: github.actor == 'tim-s-renovate-test-app[bot]' && startsWith(github.head_ref, 'deps/')
     steps:
       - name: Renovate
         uses: hmarr/auto-approve-action@v4
