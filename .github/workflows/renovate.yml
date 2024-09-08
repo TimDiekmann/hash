@@ -68,8 +68,6 @@ jobs:
 
       - name: Install Rust toolchain
         uses: ./.github/actions/install-rust-toolchain
-        with:
-          toolchain: nightly-2024-09-02
 
       - name: Install Node.js
         uses: actions/setup-node@v4

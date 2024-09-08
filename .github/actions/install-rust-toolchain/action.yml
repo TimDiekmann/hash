@@ -3,7 +3,7 @@ description: "Install Rust toolchain"
 
 inputs:
   toolchain:
-    required: true
+    required: false
     description: "Rust toolchain, e.g. 'stable' or 'nightly'"
   working-directory:
     description: "Working directory to run the action in"
@@ -26,10 +26,15 @@ runs:
         else
           RUST_TOOLCHAIN_FILE="rust-toolchain.toml"
         fi
-        # extract components from the rust-toolchain.toml 
+        # extract components from the rust-toolchain.toml
         COMPONENTS="$(cat $RUST_TOOLCHAIN_FILE | yq -p toml '.toolchain.components[]')"
 
-        rustup toolchain install "${{ inputs.toolchain }}"
+        if [[ -n "${{ inputs.toolchain }}" ]]; then
+          TOOLCHAIN_CHANNEL="${{ inputs.toolchain }}"
+        else
+          TOOLCHAIN_CHANNEL="$(cat $RUST_TOOLCHAIN_FILE | yq -p toml '.toolchain.channel')"
+        fi
+        rustup toolchain install "$TOOLCHAIN_CHANNEL"
 
         for component in $COMPONENTS; do
           # depending on the toolchain we need to conditionally skip specific components
@@ -39,7 +44,7 @@ runs:
               rustup component add --toolchain "${{ inputs.toolchain }}" "$component"
             fi
           else
-            rustup component add --toolchain "${{ inputs.toolchain }}" "$component"  
+            rustup component add --toolchain "${{ inputs.toolchain }}" "$component"
           fi
         done
 
