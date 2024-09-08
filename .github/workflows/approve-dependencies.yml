@@ -1,0 +1,16 @@
+name: Approve dependency bump
+
+on:
+  pull_request_target:
+    branches:
+      - "deps/**"
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    if: github.actor == 'tim-s-renovate-test-app[bot]'
+    steps:
+      - name: Renovate
+        uses: hmarr/auto-approve-action@v4

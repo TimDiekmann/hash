@@ -71,6 +71,11 @@ jobs:
         with:
           toolchain: nightly-2024-09-02
 
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       #      - name: Change owner for cargo
       #        if: github.event.inputs.repoCache != 'disabled'
       #        run: sudo chown -R runneradmin:root /home/runner/.cargo/
@@ -127,10 +132,6 @@ jobs:
       #          RENOVATE_REPOSITORY_CACHE: ${{ github.event.inputs.repoCache || 'enabled' }}
       #          RENOVATE_ALLOWED_ENV: '["PATH"]'
       #          RENOVATE_ENV: '{"PATH":"/home/ubuntu/.cargo/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/.local/bin:/home/ubuntu/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"}'
-
-      - uses: dkhmelenko/autoapproval@v1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
 
       - name: Compress renovate cache
         run: tar -czvf $cache_archive -C $cache_dir .
