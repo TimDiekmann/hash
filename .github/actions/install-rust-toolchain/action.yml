@@ -29,7 +29,7 @@ runs:
         # extract components from the rust-toolchain.toml
         COMPONENTS="$(cat $RUST_TOOLCHAIN_FILE | yq -p toml '.toolchain.components[]')"
 
-        if [[ -n "${{ inputs.toolchain }}" ]]; then
+        if [[ "${{ inputs.toolchain }}" != "" ]]; then
           TOOLCHAIN_CHANNEL="${{ inputs.toolchain }}"
         else
           TOOLCHAIN_CHANNEL="$(cat $RUST_TOOLCHAIN_FILE | yq -p toml '.toolchain.channel')"
