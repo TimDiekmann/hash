@@ -1,6 +1,6 @@
 # Wal2json install steps from
 # https://github.com/debezium/container-images/tree/906b855c71054d5598639d14f8718e0c4e54e98d/postgres/14-alpine
-FROM postgres:15-alpine3.18
+FROM postgres:16-alpine3.18
 
 ENV WAL2JSON_COMMIT_ID=wal2json_2_5
 
