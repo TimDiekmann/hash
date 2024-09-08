@@ -16,7 +16,6 @@ runs:
     - name: "Install Rust"
       shell: bash
       run: |
-        set -x
         # regex for components that are only available on nightly and should not be installed on stable
         # these are in variables due to: https://stackoverflow.com/a/56449915/9077988
         NIGHTLY_ONLY="miri|llvm-tools|llvm-tools-preview"
@@ -39,14 +38,14 @@ runs:
 
         for component in $COMPONENTS; do
           # depending on the toolchain we need to conditionally skip specific components
-          if [[ ! "${{ inputs.toolchain }}" =~ $NIGHTLY_TOOLCHAIN ]]; then
+          if [[ ! "$$TOOLCHAIN_CHANNEL" =~ $NIGHTLY_TOOLCHAIN ]]; then
             # ensure that we only install components that are meant for stable
             if [[ ! $component =~ $NIGHTLY_ONLY ]]; then
-              rustup component add --toolchain "${{ inputs.toolchain }}" "$component"
+              rustup component add --toolchain "$TOOLCHAIN_CHANNEL" "$component"
             fi
           else
-            rustup component add --toolchain "${{ inputs.toolchain }}" "$component"
+            rustup component add --toolchain "$TOOLCHAIN_CHANNEL" "$component"
           fi
         done
 
-        echo "RUSTUP_TOOLCHAIN=${{ inputs.toolchain }}" >> $GITHUB_ENV
+        echo "RUSTUP_TOOLCHAIN=$TOOLCHAIN_CHANNEL" >> $GITHUB_ENV
