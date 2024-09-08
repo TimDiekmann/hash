@@ -16,6 +16,7 @@ runs:
     - name: "Install Rust"
       shell: bash
       run: |
+        set -x
         # regex for components that are only available on nightly and should not be installed on stable
         # these are in variables due to: https://stackoverflow.com/a/56449915/9077988
         NIGHTLY_ONLY="miri|llvm-tools|llvm-tools-preview"
