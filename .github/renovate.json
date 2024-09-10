@@ -35,6 +35,9 @@
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "branchConcurrentLimit": 0,
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "extends": ["packages:linters", "packages:test"],
