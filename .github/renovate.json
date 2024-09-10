@@ -35,9 +35,6 @@
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "branchConcurrentLimit": 0,
-  "lockFileMaintenance": {
-    "enabled": true
-  },
   "packageRules": [
     {
       "extends": ["packages:linters", "packages:test"],
@@ -69,14 +66,30 @@
     {
       "matchManagers": ["npm"],
       "commitMessageTopic": "npm package `{{depName}}`",
-      "additionalBranchPrefix": "js/"
+      "additionalBranchPrefix": "js/",
+      "postUpgradeTasks": {
+        "commands": ["yarn fix"]
+      },
+      "lockFileMaintenance": {
+        "enabled": true,
+        "commitMessageAction": "Lockfile maintenance for `yarn.lock`"
+      }
     },
     {
       "matchManagers": ["cargo"],
       "commitMessageTopic": "Rust crate `{{depName}}`",
       "additionalBranchPrefix": "rs/",
       "dependencyDashboardApproval": false,
-      "assignees": ["TimDiekmann"]
+      "assignees": ["TimDiekmann"],
+      "postUpgradeTasks": {
+        "commands": [
+          "--config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+        ]
+      },
+      "lockFileMaintenance": {
+        "enabled": true,
+        "commitMessageAction": "Lockfile maintenance for `Cargo.lock`"
+      }
     },
     {
       "matchDepTypes": ["devDependencies"],
