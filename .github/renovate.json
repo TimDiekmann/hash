@@ -84,7 +84,7 @@
       "assignees": ["TimDiekmann"],
       "postUpgradeTasks": {
         "commands": [
-          "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+          "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --recursive"
         ]
       }
     },
