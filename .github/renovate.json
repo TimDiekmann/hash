@@ -35,6 +35,11 @@
   "prConcurrentLimit": 0,
   "prHourlyLimit": 0,
   "branchConcurrentLimit": 0,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 4am on sunday"],
+    "commitMessageAction": "Lock file maintenance for `Cargo.lock`"
+  },
   "packageRules": [
     {
       "extends": ["packages:linters", "packages:test"],
@@ -69,10 +74,6 @@
       "additionalBranchPrefix": "js/",
       "postUpgradeTasks": {
         "commands": ["yarn fix"]
-      },
-      "lockFileMaintenance": {
-        "enabled": true,
-        "commitMessageAction": "Lockfile maintenance for `yarn.lock`"
       }
     },
     {
@@ -83,12 +84,8 @@
       "assignees": ["TimDiekmann"],
       "postUpgradeTasks": {
         "commands": [
-          "--config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
+          "cargo update --config net.git-fetch-with-cli=true --manifest-path Cargo.toml --workspace"
         ]
-      },
-      "lockFileMaintenance": {
-        "enabled": true,
-        "commitMessageAction": "Lockfile maintenance for `Cargo.lock`"
       }
     },
     {
