@@ -87,7 +87,7 @@ export const EditableAuthorizationRelationships: FunctionComponent<{
         }
 
         return prev;
-      }, relationships[0]!),
+      }, relationships[0]),
     [relationships],
   );
 

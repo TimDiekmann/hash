@@ -290,7 +290,7 @@ export const createFileFromExternalUrl: ImpureGraphFunction<
 > = async (ctx, authentication, params) => {
   const { description, displayName, url } = params;
 
-  const filename = normalizeWhitespace(url.split("/").pop()!);
+  const filename = normalizeWhitespace(url.split("/").pop());
 
   const { entityTypeId, existingEntity, mimeType, ownedById } =
     await generateCommonParameters(ctx, authentication, params, filename);
