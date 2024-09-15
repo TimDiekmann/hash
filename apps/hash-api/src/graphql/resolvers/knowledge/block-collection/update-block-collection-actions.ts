@@ -336,9 +336,7 @@ export const handleUpdateEntity = async (
         ({
           op: entity.properties[key] === value ? "replace" : "add",
           path: [key],
-          property: mergePropertiesAndMetadata(
-            (value ?? undefined) as PropertyValue,
-          ),
+          property: mergePropertiesAndMetadata(value ?? undefined),
         }) satisfies PropertyPatchOperation,
     ),
   });

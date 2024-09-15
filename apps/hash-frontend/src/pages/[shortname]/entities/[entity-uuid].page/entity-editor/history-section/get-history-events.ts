@@ -157,7 +157,7 @@ export const getHistoryEvents = (diffs: EntityDiff[], subgraph: Subgraph) => {
         /**
          * @todo H-2775 – handle property objects and changes to array contents
          */
-        const propertyBaseUrl = propertyDiff.path[0] as BaseUrl;
+        const propertyBaseUrl = propertyDiff.path[0];
         try {
           const propertyTypeWithMetadata = getPropertyTypeForEntity(
             subgraph,
