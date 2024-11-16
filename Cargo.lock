@@ -791,9 +791,9 @@ dependencies = [
 
 [[package]]
 name = "axum"
-version = "0.7.7"
+version = "0.7.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "504e3947307ac8326a5437504c517c4b56716c9d98fac0028c2acc7ca47d70ae"
+checksum = "49c41b948da08fb481a94546cd874843adc1142278b0af4badf9b1b78599d68d"
 dependencies = [
  "async-trait",
  "axum-core 0.4.5",
@@ -2402,7 +2402,7 @@ version = "0.0.0"
 dependencies = [
  "async-trait",
  "authorization",
- "axum 0.7.7",
+ "axum 0.7.8",
  "axum-core 0.4.5",
  "bytes",
  "error-stack 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -2635,7 +2635,7 @@ name = "hash-graph"
 version = "0.0.0"
 dependencies = [
  "authorization",
- "axum 0.7.7",
+ "axum 0.7.8",
  "clap",
  "clap_complete",
  "codec",
@@ -6844,7 +6844,7 @@ name = "test-server"
 version = "0.0.0"
 dependencies = [
  "authorization",
- "axum 0.7.7",
+ "axum 0.7.8",
  "codec",
  "error-stack 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures",
@@ -7211,7 +7211,7 @@ checksum = "877c5b330756d856ffcc4553ab34a5684481ade925ecc54bcd1bf02b1d0d4d52"
 dependencies = [
  "async-stream",
  "async-trait",
- "axum 0.7.7",
+ "axum 0.7.8",
  "base64 0.22.1",
  "bytes",
  "h2 0.4.6",
