@@ -26,8 +26,7 @@ export type AnthropicMessageModel = (typeof anthropicMessageModels)[number];
 
 export const isAnthropicMessageModel = (
   model: string,
-): model is AnthropicMessageModel =>
-  anthropicMessageModels.includes(model as AnthropicMessageModel);
+): model is AnthropicMessageModel => anthropicMessageModels.includes(model);
 
 /** @see https://docs.anthropic.com/claude/docs/models-overview#model-comparison */
 export const anthropicMessageModelToContextWindow: Record<
