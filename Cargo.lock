@@ -3537,9 +3537,9 @@ dependencies = [
 
 [[package]]
 name = "jsonschema"
-version = "0.27.1"
+version = "0.28.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c9deec35f105267485e0b85b4da7861d444ad498bd476418ec10aeaec3c2ead1"
+checksum = "c2303ef9ebb6acd7afe7c48cbc06ab807349c429d4e47c4cde8b35400503198f"
 dependencies = [
  "ahash",
  "base64 0.22.1",
@@ -5498,9 +5498,9 @@ dependencies = [
 
 [[package]]
 name = "referencing"
-version = "0.27.1"
+version = "0.28.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "040034d1c0deb1c413e44dafaea2f8bd7d273f1b56de531ab8cee5a93acb1741"
+checksum = "2fb7a1f338d8e32357ad1d7078454c248e5fdd2188fbb6966b400c2fa4d4f566"
 dependencies = [
  "ahash",
  "fluent-uri",
