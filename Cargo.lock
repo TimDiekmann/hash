@@ -522,9 +522,9 @@ dependencies = [
 
 [[package]]
 name = "aws-sdk-ssooidc"
-version = "1.57.0"
+version = "1.57.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aba487b6a05de9858f83c05133ddd1b465be60b95460491f96c5c7b761823a04"
+checksum = "a120ade4a44691b3c5c2ff2fa61b14ed331fdc218397f61ab48d66593012ae2a"
 dependencies = [
  "aws-credential-types",
  "aws-runtime",
@@ -1402,9 +1402,9 @@ checksum = "435aea653a110cde24da15ca2dac9e06d17d92ce2bd6c2b9179b508abbe6f06f"
 
 [[package]]
 name = "cpufeatures"
-version = "0.2.16"
+version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "16b80225097f2e5ae4e7179dd2266824648f3e2f49d9134d584b76389d31c4c3"
+checksum = "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280"
 dependencies = [
  "libc",
 ]
@@ -3629,9 +3629,9 @@ dependencies = [
 
 [[package]]
 name = "jsonschema"
-version = "0.28.2"
+version = "0.28.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ec0770aae095374283fa382c9ef68085f2f0ff8ec020a19a142762347022daea"
+checksum = "4b8f66fe41fa46a5c83ed1c717b7e0b4635988f427083108c8cf0a882cc13441"
 dependencies = [
  "ahash",
  "base64 0.22.1",
@@ -5595,9 +5595,9 @@ dependencies = [
 
 [[package]]
 name = "referencing"
-version = "0.28.2"
+version = "0.28.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8cdb93bff06297a5bf369453c311cd1a7c58f26ef5576aa70d363836f231c0dc"
+checksum = "d0dcb5ab28989ad7c91eb1b9531a37a1a137cc69a0499aee4117cae4a107c464"
 dependencies = [
  "ahash",
  "fluent-uri",
