@@ -129,7 +129,7 @@ export const App: BlockComponent<BlockEntity> = ({
     () =>
       linkedEntities.find(
         ({ linkEntity }) => linkEntity.metadata.entityTypeId === hasAddressLink,
-      ) as AddressBlockHasAddressLink | undefined,
+      ),
     [linkedEntities],
   );
 
@@ -148,7 +148,7 @@ export const App: BlockComponent<BlockEntity> = ({
           (linkEntity as HasMapImage).properties[zoomLevelKey] === zoomLevel &&
           (linkEntity as HasMapImage).properties[addressIdKey] === addressId
         );
-      }) as AddressBlockHasMapImageLink | undefined,
+      }),
     [linkedEntities, zoomLevel, addressId],
   );
 
