@@ -24,7 +24,7 @@ serde = { version = "1", default-features = false, public = true, optional = tru
 # Private workspace dependencies
 
 # Private third-party dependencies
-spin = { version = "0.9", default-features = false, optional = true, features = ['rwlock', 'once'] }
+spin = { version = "0.10", default-features = false, optional = true, features = ['rwlock', 'once'] }
 tracing-error = { version = "0.2", optional = true, default-features = false }
 
 [dev-dependencies]
