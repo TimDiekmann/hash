@@ -25,7 +25,7 @@ serde_with = { workspace = true, features = ["std", "macros"], optional = true }
 thiserror = { workspace = true }
 
 [dev-dependencies]
-jsonptr = "0.6.0"
+jsonptr = "0.7.0"
 serde_json = { workspace = true }
 
 [features]
