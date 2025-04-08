@@ -3979,9 +3979,9 @@ checksum = "8355be11b20d696c8f18f6cc018c4e372165b1fa8126cef092399c9951984ffa"
 
 [[package]]
 name = "libmimalloc-sys"
-version = "0.1.41"
+version = "0.1.42"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b20daca3a4ac14dbdc753c5e90fc7b490a48a9131daed3c9a9ced7b2defd37b"
+checksum = "ec9d6fac27761dabcd4ee73571cdb06b7022dc99089acbe5435691edffaac0f4"
 dependencies = [
  "cc",
  "libc",
@@ -4496,9 +4496,9 @@ checksum = "78ca9ab1a0babb1e7d5695e3530886289c18cf2f87ec19a575a0abdce112e3a3"
 
 [[package]]
 name = "mimalloc"
-version = "0.1.45"
+version = "0.1.46"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "03cb1f88093fe50061ca1195d336ffec131347c7b833db31f9ab62a2d1b7925f"
+checksum = "995942f432bbb4822a7e9c3faa87a695185b0d09273ba85f097b54f4e458f2af"
 dependencies = [
  "libmimalloc-sys",
 ]
@@ -4989,20 +4989,20 @@ dependencies = [
 
 [[package]]
 name = "orx-fixed-vec"
-version = "3.15.0"
+version = "3.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "866c30b4da32c1b19dd0dd883250cfadd5d07355eb2c590ae71107a0616dc98a"
+checksum = "cb192f4a087fac612f646c8f2b9ef15267498a3cfa723773be7ce21109057f07"
 dependencies = [
  "orx-iterable",
  "orx-pinned-vec",
- "orx-pseudo-default 2.0.0",
+ "orx-pseudo-default 2.1.0",
 ]
 
 [[package]]
 name = "orx-iterable"
-version = "1.2.0"
+version = "1.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d22609824580ce380e924424a9771c1b6a2786e229fe64185078b17470e445e4"
+checksum = "dfa2cb3f82a187c68835faac9cf03faaee70b93f4da3b85515ac1b4c6f8a432d"
 dependencies = [
  "orx-self-or",
 ]
@@ -5015,18 +5015,18 @@ checksum = "27c1e948dba7be4743a9dccb561ce79d869b4cf56b18a9b42107627ef9e5065d"
 dependencies = [
  "orx-fixed-vec",
  "orx-pinned-vec",
- "orx-pseudo-default 2.0.0",
+ "orx-pseudo-default 2.1.0",
  "orx-split-vec",
 ]
 
 [[package]]
 name = "orx-pinned-vec"
-version = "3.15.0"
+version = "3.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d771de46a0d37e050bd3a8d024006ffdab61ec131bc475329401700ba561be2c"
+checksum = "2707ef8045673419bec5b92a3073b0066fed6d42b1f1be07aa50201fd3cb4e92"
 dependencies = [
  "orx-iterable",
- "orx-pseudo-default 2.0.0",
+ "orx-pseudo-default 2.1.0",
 ]
 
 [[package]]
@@ -5037,15 +5037,15 @@ checksum = "b97dde303d83e7609797d0c1222a9fb02e66445abc47643cc3d7168fd7c804cc"
 
 [[package]]
 name = "orx-pseudo-default"
-version = "2.0.0"
+version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "51774ae0c9a16454856d44c31d2c837e62675f6e410af34ae59c534ec34460d0"
+checksum = "34eaace9ae01f7025804fbca40ec45b87c19ba0328d97195e01c6135897762a8"
 
 [[package]]
 name = "orx-self-or"
-version = "1.1.1"
+version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "111567c59e690b4d65bca4076c41df459cfe07296380534ac4b9cc882add13bf"
+checksum = "67a8e35dfe18921e475b9861266fd58a5ecfd681161f242d24a9e2d1e07fbc28"
 
 [[package]]
 name = "orx-split-vec"
@@ -5055,7 +5055,7 @@ checksum = "413e86628dbf368abaa47ee6bf55c3e20bedd8504fcb7fe1a7ae72227b9e755f"
 dependencies = [
  "orx-iterable",
  "orx-pinned-vec",
- "orx-pseudo-default 2.0.0",
+ "orx-pseudo-default 2.1.0",
 ]
 
 [[package]]
