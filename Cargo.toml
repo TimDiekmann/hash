@@ -96,11 +96,11 @@ json-number = { version = "=0.4.9", default-features = false }
 jsonptr = { version = "=0.7.1", default-features = false }
 multiaddr = { version = "=0.18.2", default-features = false }
 multistream-select = { version = "=0.13.0", default-features = false }
-libp2p-core = { version = "=0.42.0", default-features = false }
+libp2p-core = { version = "=0.43.0", default-features = false }
 libp2p-identity = { version = "=0.2.10", default-features = false }
-libp2p-ping = { version = "=0.45.0", default-features = false }
-libp2p-swarm = { version = "=0.45.1", default-features = false }
-libp2p-yamux = { version = "=0.46.0", default-features = false }
+libp2p-ping = { version = "=0.46.0", default-features = false }
+libp2p-swarm = { version = "=0.46.0", default-features = false }
+libp2p-yamux = { version = "=0.47.0", default-features = false }
 prometheus-client = { version = "=0.23.1", default-features = false }
 postgres-types = { version = "=0.2.9", default-features = false }
 reqwest = { version = "=0.12.15", default-features = false, features = ["rustls-tls"] }
@@ -154,7 +154,7 @@ insta = { version = "=1.42.2", default-features = false }
 jsonschema = { version = "=0.29.1", default-features = false }
 justjson = { version = "=0.3.0", default-features = false }
 lexical = { version = "=6.1.1", default-features = false }
-libp2p = { version = "=0.54.1", default-features = false }
+libp2p = { version = "=0.55.0", default-features = false }
 libp2p-stream = { version = "=0.2.0-alpha", default-features = false }
 logos = { version = "=0.15.0", default-features = false }
 memchr = { version = "=2.7.4", default-features = false }
