@@ -2638,7 +2638,7 @@ dependencies = [
  "graph",
  "graph-test-data",
  "graph-types",
- "rand 0.9.0",
+ "rand 0.9.1",
  "repo-chores",
  "serde_json",
  "temporal-versioning",
@@ -2962,7 +2962,7 @@ dependencies = [
  "idna",
  "ipnet",
  "once_cell",
- "rand 0.9.0",
+ "rand 0.9.1",
  "socket2",
  "thiserror 2.0.12",
  "tinyvec",
@@ -2984,7 +2984,7 @@ dependencies = [
  "moka",
  "once_cell",
  "parking_lot",
- "rand 0.9.0",
+ "rand 0.9.1",
  "resolv-conf",
  "smallvec",
  "thiserror 2.0.12",
@@ -4996,7 +4996,7 @@ dependencies = [
  "futures-util",
  "opentelemetry 0.29.1",
  "percent-encoding",
- "rand 0.9.0",
+ "rand 0.9.1",
  "thiserror 2.0.12",
  "tokio",
  "tokio-stream",
@@ -5340,7 +5340,7 @@ dependencies = [
  "hmac",
  "md-5",
  "memchr",
- "rand 0.9.0",
+ "rand 0.9.1",
  "sha2",
  "stringprep",
 ]
@@ -5432,9 +5432,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.94"
+version = "1.0.95"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a31971752e70b8b2686d7e46ec17fb38dad4051d94024c88df49b667caea9c84"
+checksum = "02b3e5e68a3a1a02aad3ec490a98007cbc13c37cbe84a3cd7b8e406d76e7f778"
 dependencies = [
  "unicode-ident",
 ]
@@ -5681,7 +5681,7 @@ checksum = "b820744eb4dc9b57a3398183639c511b5a26d2ed702cedd3febaa1393caa22cc"
 dependencies = [
  "bytes",
  "getrandom 0.3.2",
- "rand 0.9.0",
+ "rand 0.9.1",
  "ring",
  "rustc-hash 2.1.1",
  "rustls 0.23.26",
@@ -5741,13 +5741,12 @@ dependencies = [
 
 [[package]]
 name = "rand"
-version = "0.9.0"
+version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3779b94aeb87e8bd4e834cee3650289ee9e0d5677f976ecdb6d219e5f4f6cd94"
+checksum = "9fbfd9d094a40bf3ae768db9361049ace4c0e04a4fd6b359518bd7b73a73dd97"
 dependencies = [
  "rand_chacha 0.9.0",
  "rand_core 0.9.3",
- "zerocopy 0.8.24",
 ]
 
 [[package]]
@@ -7447,7 +7446,7 @@ dependencies = [
  "pin-project-lite",
  "postgres-protocol",
  "postgres-types",
- "rand 0.9.0",
+ "rand 0.9.1",
  "socket2",
  "tokio",
  "tokio-util",
