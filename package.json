@@ -107,7 +107,7 @@
     "dotenv-flow": "3.3.0",
     "husky": "8.0.3",
     "lint-staged": "15.3.0",
-    "lockfile-lint": "4.14.0",
+    "lockfile-lint": "4.14.1",
     "markdownlint-cli": "0.43.0",
     "npm-run-all2": "6.2.2",
     "patch-package": "6.5.1",
