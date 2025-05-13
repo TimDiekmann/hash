@@ -7091,7 +7091,7 @@
   resolved "https://registry.yarnpkg.com/@repeaterjs/repeater/-/repeater-3.0.4.tgz#a04d63f4d1bf5540a41b01a921c9a7fddc3bd1ca"
   integrity "sha1-oE1j9NG/VUCkGwGpIcmn/dw70co= sha512-AW8PKd6iX3vAZ0vA43nOUOnbq/X5ihgU+mSXXqunMkeQADGiqw/PY0JNeYtD5sr0PAy51YPgAPbDoeapv9r8WA=="
 
-"@reteps/dockerfmt@^0.3.2":
+"@reteps/dockerfmt@^0.3.5":
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/@reteps/dockerfmt/-/dockerfmt-0.3.6.tgz#055be8a367c4b5316d3aa9c10c4c62eab2a4fce2"
   integrity sha512-Tb5wIMvBf/nLejTQ61krK644/CEMB/cpiaIFXqGApfGqO3GwcR3qnI0DbmkFVCl2OyEp8LnLX3EkucoL0+tbFg==
@@ -25653,20 +25653,20 @@ present@^0.0.3:
   resolved "https://registry.yarnpkg.com/present/-/present-0.0.3.tgz#5aefb8a5ddf6b34c65743bf1cde53523aac1c05a"
   integrity sha512-d0QMXYTKHuAO0n0IfI/x2lbNwybdNWjRQ08hQySzqMQ2M0gwh/IetTv2glkPJihFn+cMDYjK/BiVgcLcjsASgg==
 
-prettier-plugin-packagejson@2.5.11:
-  version "2.5.11"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.5.11.tgz#de5837923c4b5a6b38d70917bea5b2fbc525df32"
-  integrity sha512-BJpXSrQhrewmeRxe1e/BYrWyrBG4yc+RaearWGdNwcUnHZQUffFVqPsXyB7tQA7WFeBRgh3wadXb9p2BPuLKvw==
+prettier-plugin-packagejson@2.5.12:
+  version "2.5.12"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.5.12.tgz#fa4c5f3564fb5b41dabc81e3a7c56ea449e16d68"
+  integrity sha512-IMBkjSNMaMx8QpmYD/5Y7gXn1hRBMY91EF29MotVSI6bT7SCDFZ7bXL9EeumEXn7tjUFYoN8D0fTs0XpxmYg8A==
   dependencies:
-    sort-package-json "3.2.0"
+    sort-package-json "3.2.1"
     synckit "0.11.4"
 
-prettier-plugin-sh@0.17.2:
-  version "0.17.2"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-sh/-/prettier-plugin-sh-0.17.2.tgz#6d16bc1cc36c446a91aa01ff223ed94a5c6d5e92"
-  integrity sha512-7+dEo/IYbhrUj4qP+1QXj41/5Hv9ZkxBuEatI1jywrcAlVF1aGhdYJF4Sn+M67nkA16iRL53W4FSRe1bitTdmQ==
+prettier-plugin-sh@0.17.4:
+  version "0.17.4"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-sh/-/prettier-plugin-sh-0.17.4.tgz#b6ea58f320d60be43c0fd8d7ae390bba9c488ed4"
+  integrity sha512-aAVKXZ7GTEMZdZsIPSwMwddwPvt2ibMbRGd4OJAP0G7QoeYZV+mPNg2Oln3R53sZ4PVjeAA7Xzi/PuI0QlHHfQ==
   dependencies:
-    "@reteps/dockerfmt" "^0.3.2"
+    "@reteps/dockerfmt" "^0.3.5"
     sh-syntax "^0.5.6"
 
 prettier@*, prettier@^2.3.2, prettier@^2.6.2, prettier@^2.7.1, prettier@^2.8.0:
@@ -28549,10 +28549,10 @@ sort-object-keys@^1.1.3:
   resolved "https://registry.yarnpkg.com/sort-object-keys/-/sort-object-keys-1.1.3.tgz#bff833fe85cab147b34742e45863453c1e190b45"
   integrity "sha1-v/gz/oXKsUezR0LkWGNFPB4ZC0U= sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg=="
 
-sort-package-json@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-3.2.0.tgz#735a16dad21cc1a82c317dfa856edfcf3d8418b3"
-  integrity sha512-jadbj4vvIlevL578X5+1qVX/Nn9Jk7/U+cLVjR1IqfDFo3ISY0eoyksd3ylyTwGunlEMUgbTRYowLr0CkSxcQw==
+sort-package-json@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-3.2.1.tgz#889f3bdf43ceeff5fa4278a7c53ae5b1520d287e"
+  integrity sha512-rTfRdb20vuoAn7LDlEtCqOkYfl2X+Qze6cLbNOzcDpbmKEhJI30tTN44d5shbKJnXsvz24QQhlCm81Bag7EOKg==
   dependencies:
     detect-indent "^7.0.1"
     detect-newline "^4.0.1"
