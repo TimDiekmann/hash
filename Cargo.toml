@@ -158,7 +158,7 @@ libp2p = { version = "=0.55.0", default-features = false }
 libp2p-stream = { version = "=0.2.0-alpha", default-features = false }
 logos = { version = "=0.15.0", default-features = false }
 memchr = { version = "=2.7.5", default-features = false }
-mimalloc = { version = "=0.1.46", default-features = false }
+mimalloc = { version = "=0.1.47", default-features = false }
 mime = { version = "=0.3.17", default-features = false }
 num-traits = { version = "=0.2.19", default-features = false }
 once_cell = { version = "=1.21.3", default-features = false }
