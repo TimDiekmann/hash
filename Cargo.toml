@@ -210,7 +210,7 @@ tsify = { version = "=0.5.5", default-features = false }
 unicode-ident = { version = "=1.0.18", default-features = false }
 virtue = { version = "=0.0.18", default-features = false }
 walkdir = { version = "=2.5.0", default-features = false }
-winnow = { version = "=0.7.11", default-features = false }
+winnow = { version = "=0.7.12", default-features = false }
 
 [profile.production]
 inherits = "release"
