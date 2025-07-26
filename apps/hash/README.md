@@ -148,7 +148,6 @@ To run HASH locally, please follow these steps:
 1. Log in
 
    There are three users seeded automatically for development. Their passwords are all `password`.
-
    - `alice@example.com`, `bob@example.com` – regular users
    - `admin@example.com` – an admin
 
@@ -159,13 +158,11 @@ If you need to run the browser plugin locally, see the `README.md` in the `apps/
 If you need to reset the local database, to clear out test data or because it has become corrupted during development, you have two options:
 
 1. The slow option – rebuild in Docker
-
    1. In the Docker UI (or via CLI at your preference), stop and delete the `hash-external-services` container
    1. In 'Volumes', search 'hash-external-services' and delete the volumes shown
    1. Run `yarn external-services up --wait` to rebuild the services
 
 1. The fast option – reset the database via the Graph API
-
    1. Run the Graph API in test mode by running `yarn dev:graph:test-server`
    1. Run `yarn graph:reset-database` to reset the database
    1. **If you need to use the frontend**, you will also need to delete the rows in the `identities` table in the `dev_kratos` database, or signin will not work. You can do so via any Postgres UI or CLI. The db connection and user details are in `.env`
