@@ -830,7 +830,7 @@ version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "98e529aee37b5c8206bb4bf4c44797127566d72f76952c970bd3d1e85de8f4e2"
 dependencies = [
- "axum-core 0.5.3",
+ "axum-core 0.5.4",
  "bytes",
  "form_urlencoded",
  "futures-util",
@@ -876,9 +876,9 @@ dependencies = [
 
 [[package]]
 name = "axum-core"
-version = "0.5.3"
+version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f9bcffc1a1d0c6a74823b55df1f1c829c0d49e884518c021cc4d93471f772b1f"
+checksum = "0ac7a6beb1182c7e30253ee75c3e918080bfb83f5a3023bcdf7209d85fd147e6"
 dependencies = [
  "bytes",
  "futures-core",
@@ -887,7 +887,6 @@ dependencies = [
  "http-body-util",
  "mime",
  "pin-project-lite",
- "rustversion",
  "sync_wrapper 1.0.2",
  "tower-layer",
  "tower-service",
@@ -2583,7 +2582,7 @@ dependencies = [
  "async-trait",
  "authorization",
  "axum 0.8.5",
- "axum-core 0.5.3",
+ "axum-core 0.5.4",
  "bytes",
  "error-stack 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "graph",
