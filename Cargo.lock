@@ -433,9 +433,9 @@ dependencies = [
 
 [[package]]
 name = "aws-lc-sys"
-version = "0.32.1"
+version = "0.32.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ba2e2516bdf37af57fc6ff047855f54abad0066e5c4fdaaeb76dabb2e05bcf5"
+checksum = "a2b715a6010afb9e457ca2b7c9d2b9c344baa8baed7b38dc476034c171b32575"
 dependencies = [
  "bindgen",
  "cc",
@@ -826,11 +826,11 @@ dependencies = [
 
 [[package]]
 name = "axum"
-version = "0.8.5"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "98e529aee37b5c8206bb4bf4c44797127566d72f76952c970bd3d1e85de8f4e2"
+checksum = "8a18ed336352031311f4e0b4dd2ff392d4fbb370777c9d18d7fc9d7359f73871"
 dependencies = [
- "axum-core 0.5.4",
+ "axum-core 0.5.5",
  "bytes",
  "form_urlencoded",
  "futures-util",
@@ -876,9 +876,9 @@ dependencies = [
 
 [[package]]
 name = "axum-core"
-version = "0.5.4"
+version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ac7a6beb1182c7e30253ee75c3e918080bfb83f5a3023bcdf7209d85fd147e6"
+checksum = "59446ce19cd142f8833f856eb31f3eb097812d1479ab224f54d72428ca21ea22"
 dependencies = [
  "bytes",
  "futures-core",
@@ -2597,8 +2597,8 @@ version = "0.0.0"
 dependencies = [
  "async-trait",
  "authorization",
- "axum 0.8.5",
- "axum-core 0.5.4",
+ "axum 0.8.6",
+ "axum-core 0.5.5",
  "bytes",
  "error-stack 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "graph",
@@ -2830,7 +2830,7 @@ name = "hash-graph"
 version = "0.0.0"
 dependencies = [
  "authorization",
- "axum 0.8.5",
+ "axum 0.8.6",
  "clap",
  "clap_complete",
  "codec",
@@ -5043,9 +5043,9 @@ dependencies = [
 
 [[package]]
 name = "orx-pinned-vec"
-version = "3.18.0"
+version = "3.20.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e0841415d7abaadebe3306deebc7bcde110c09c4fbc7650bcb6614b9657d9d72"
+checksum = "67b8a3e9913e68446bcf7e1d6faaecd6192a8009ae13bce83d43073d989308c0"
 dependencies = [
  "orx-iterable",
  "orx-pseudo-default 2.1.0",
@@ -7237,7 +7237,7 @@ name = "test-server"
 version = "0.0.0"
 dependencies = [
  "authorization",
- "axum 0.8.5",
+ "axum 0.8.6",
  "codec",
  "error-stack 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures",
