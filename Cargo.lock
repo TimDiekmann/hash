@@ -2625,7 +2625,7 @@ dependencies = [
  "time",
  "tower-http",
  "tracing",
- "tracing-opentelemetry",
+ "tracing-opentelemetry 0.32.0",
  "type-system",
  "utoipa",
  "uuid",
@@ -2886,7 +2886,7 @@ dependencies = [
  "tracing-appender",
  "tracing-core",
  "tracing-error",
- "tracing-opentelemetry",
+ "tracing-opentelemetry 0.32.0",
  "tracing-subscriber",
 ]
 
@@ -7025,7 +7025,7 @@ dependencies = [
  "tokio-serde",
  "tokio-util",
  "tracing",
- "tracing-opentelemetry",
+ "tracing-opentelemetry 0.31.0",
 ]
 
 [[package]]
@@ -7831,6 +7831,23 @@ dependencies = [
  "once_cell",
  "opentelemetry 0.30.0",
  "opentelemetry_sdk 0.30.0",
+ "tracing",
+ "tracing-core",
+ "tracing-subscriber",
+ "web-time",
+]
+
+[[package]]
+name = "tracing-opentelemetry"
+version = "0.32.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1e6e5658463dd88089aba75c7791e1d3120633b1bfde22478b28f625a9bb1b8e"
+dependencies = [
+ "js-sys",
+ "opentelemetry 0.31.0",
+ "opentelemetry_sdk 0.31.0",
+ "rustversion",
+ "thiserror 2.0.17",
  "tracing",
  "tracing-core",
  "tracing-subscriber",
