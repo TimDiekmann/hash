@@ -2149,7 +2149,7 @@ dependencies = [
  "spin",
  "supports-color",
  "supports-unicode",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "tracing",
  "tracing-error",
  "tracing-subscriber",
@@ -2683,7 +2683,7 @@ dependencies = [
  "serde",
  "serde_json",
  "temporal-versioning",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "time",
  "type-system",
  "url",
@@ -2770,7 +2770,7 @@ dependencies = [
  "scc",
  "tachyonix",
  "test-log",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "tokio",
  "tokio-stream",
  "tokio-util",
@@ -2790,7 +2790,7 @@ dependencies = [
  "harpc-wire-protocol",
  "pin-project",
  "pin-project-lite",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "tokio",
  "tokio-test",
  "tokio-util",
@@ -2820,7 +2820,7 @@ dependencies = [
  "proptest",
  "similar-asserts",
  "test-strategy",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
 ]
 
 [[package]]
@@ -3050,7 +3050,7 @@ dependencies = [
  "serde_json",
  "serde_with",
  "text-size",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
 ]
 
 [[package]]
@@ -6008,7 +6008,7 @@ dependencies = [
  "inferno",
  "serde",
  "serde_json",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "tokio",
  "walkdir",
 ]
@@ -7104,7 +7104,7 @@ dependencies = [
  "serde_json",
  "temporal-client 0.1.0",
  "temporal-sdk-core-protos",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "url",
  "uuid",
 ]
@@ -8009,7 +8009,7 @@ dependencies = [
  "regex",
  "serde",
  "serde_json",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "tokio",
  "tsify",
  "url",
@@ -8262,7 +8262,7 @@ dependencies = [
  "regex",
  "serde",
  "serde_json",
- "thiserror 1.0.69",
+ "thiserror 2.0.17",
  "tokio",
  "type-system",
  "url",
