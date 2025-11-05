@@ -57,7 +57,7 @@
     "@types/dotenv-flow": "3.3.3",
     "@types/uuid": "10.0.0",
     "eslint": "8.57.0",
-    "rimraf": "6.0.1",
+    "rimraf": "6.1.0",
     "rollup": "4.12.0",
     "typescript": "5.5.4"
   }
