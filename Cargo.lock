@@ -1167,9 +1167,9 @@ checksum = "37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5"
 
 [[package]]
 name = "cc"
-version = "1.2.44"
+version = "1.2.45"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "37521ac7aabe3d13122dc382493e20c9416f299d2ccd5b3a5340a2570cdeb0f3"
+checksum = "35900b6c8d709fb1d854671ae27aeaa9eec2f8b01b364e1619a40da3e6fe2afe"
 dependencies = [
  "find-msvc-tools",
  "jobserver",
@@ -4777,9 +4777,9 @@ checksum = "c08d65885ee38876c4f86fa503fb49d7b507c2b62552df7c70b2fce627e06381"
 
 [[package]]
 name = "openssl"
-version = "0.10.74"
+version = "0.10.75"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "24ad14dd45412269e1a30f52ad8f0664f0f4f4a89ee8fe28c3b3527021ebb654"
+checksum = "08838db121398ad17ab8531ce9de97b244589089e290a384c900cb9ff7434328"
 dependencies = [
  "bitflags 2.10.0",
  "cfg-if",
@@ -4809,9 +4809,9 @@ checksum = "d05e27ee213611ffe7d6348b942e8f942b37114c00cc03cec254295a4a17852e"
 
 [[package]]
 name = "openssl-sys"
-version = "0.9.110"
+version = "0.9.111"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a9f0075ba3c21b09f8e8b2026584b1d18d49388648f2fbbf3c97ea8deced8e2"
+checksum = "82cab2d520aa75e3c58898289429321eb788c3106963d0dc886ec7a5f4adc321"
 dependencies = [
  "cc",
  "libc",
@@ -6218,9 +6218,9 @@ checksum = "28d3b2b1366ec20994f1fd18c3c594f05c5dd4bc44d8bb0c1c632c8d6829481f"
 
 [[package]]
 name = "saa"
-version = "5.3.2"
+version = "5.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72373418560105d15920f9f8f49a301e7aed06223748e67e022213d09aea33c2"
+checksum = "4dfac11c0cd0606aaf7eb9ef66f82c119438a96dc487715abb8b57fdf08ad4fe"
 
 [[package]]
 name = "same-file"
@@ -7134,9 +7134,9 @@ dependencies = [
 
 [[package]]
 name = "test-fuzz"
-version = "7.2.4"
+version = "7.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6696b1bcee3edb0553566f632c31b3b18fda42cf4d529327ca47f230c4acd3ab"
+checksum = "11e5c77910b1d5b469a342be541cf44933f0ad2c4b8d5acb32ee46697fd60546"
 dependencies = [
  "serde",
  "serde_combinators",
@@ -7147,9 +7147,9 @@ dependencies = [
 
 [[package]]
 name = "test-fuzz-internal"
-version = "7.2.4"
+version = "7.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5988511fdb342582013a17a4263e994bce92828a1bae039f92a2f05a5f95ce78"
+checksum = "4d25f2f0ee315b130411a98570dd128dfe344bfaa0a28bf33d38f4a1fe85f39b"
 dependencies = [
  "bincode",
  "cargo_metadata",
@@ -7158,9 +7158,9 @@ dependencies = [
 
 [[package]]
 name = "test-fuzz-macro"
-version = "7.2.4"
+version = "7.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c8893e583c5af79a67761a9285535d26612cb1617fcbf388c3abc0c1d35a0b89"
+checksum = "b8c03ba0a9e3e4032f94d71c85e149af147843c6f212e4ca4383542d606b04a6"
 dependencies = [
  "darling 0.21.3",
  "heck 0.5.0",
@@ -7173,9 +7173,9 @@ dependencies = [
 
 [[package]]
 name = "test-fuzz-runtime"
-version = "7.2.4"
+version = "7.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "47be06afdb9cb50c76ef938e2e4bda2e28e1cbb4d3d305603d57a5e374a6d6e7"
+checksum = "f9a4ac481aa983d386e857a7be0006c2f0ef26e0c5326bbc7262f73c2891b91d"
 dependencies = [
  "hex",
  "num-traits",
