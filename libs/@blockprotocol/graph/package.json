@@ -81,7 +81,7 @@
     "@types/node": "20.16.5",
     "@types/react": "18.2.68",
     "eslint": "8.57.0",
-    "rimraf": "6.1.0"
+    "rimraf": "6.1.2"
   },
   "peerDependencies": {
     "react": "^18.0.0"
