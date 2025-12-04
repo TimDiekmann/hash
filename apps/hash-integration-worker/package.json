@@ -45,6 +45,6 @@
     "@sentry/cli": "2.35.0",
     "@types/dotenv-flow": "3.3.3",
     "eslint": "8.57.0",
-    "rimraf": "6.1.0"
+    "rimraf": "6.1.2"
   }
 }
