@@ -115,19 +115,13 @@ type EntityInput<Properties extends PropertyObject> =
 const isSerializedEntity = <Properties extends EntityProperties>(
   entity: EntityInput<EntityProperties["properties"]>,
 ): entity is SerializedEntity => {
-  return (
-    "entityTypeId" in
-    (entity as GraphApiEntity | EntityData<Properties>).metadata
-  );
+  return "entityTypeId" in entity.metadata;
 };
 
 const isGraphApiEntity = <Properties extends EntityProperties>(
   entity: EntityInput<EntityProperties["properties"]>,
 ): entity is GraphApiEntity => {
-  return (
-    "entityTypeIds" in
-    (entity as GraphApiEntity | EntityData<Properties>).metadata
-  );
+  return "entityTypeIds" in entity.metadata;
 };
 
 export const propertyObjectToPatches = (
@@ -717,9 +711,7 @@ export class LinkEntity<
   Properties extends EntityProperties = EntityProperties,
 > extends Entity<Properties> {
   constructor(entity: EntityInput<Properties> | Entity) {
-    const input = (entity instanceof Entity ? entity.toJSON() : entity) as
-      | GraphApiEntity
-      | EntityData<Properties>;
+    const input = entity instanceof Entity ? entity.toJSON() : entity;
 
     if (!input.linkData) {
       throw new Error(
@@ -727,7 +719,7 @@ export class LinkEntity<
       );
     }
 
-    super(input as EntityInput<Properties>);
+    super(input);
   }
 
   public static async createMultiple<T extends EntityProperties[]>(

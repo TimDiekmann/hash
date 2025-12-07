@@ -457,7 +457,7 @@ export const runCoordinatingAgent: FlowActionActivity<{
               fileEntity.properties[
                 "https://blockprotocol.org/@blockprotocol/types/property-type/file-url/"
               ],
-              source.location!.uri!,
+              source.location!.uri,
             ),
           )
         ) {

@@ -113,7 +113,7 @@ const mapOntologyTypeRecordId = (
   recordId: OntologyTypeRecordIdGraphApi,
 ): OntologyTypeRecordId => {
   return {
-    baseUrl: recordId.baseUrl as BaseUrl,
+    baseUrl: recordId.baseUrl,
     version: recordId.version,
   };
 };
@@ -222,7 +222,7 @@ const mapEntityTypeMetadata = (
 ): EntityTypeMetadata => {
   return {
     recordId: mapOntologyTypeRecordId(metadata.recordId),
-    labelProperty: metadata.labelProperty as BaseUrl,
+    labelProperty: metadata.labelProperty,
     provenance: mapOntologyProvenance(metadata.provenance),
     ...("fetchedAt" in metadata
       ? { fetchedAt: metadata.fetchedAt as Timestamp }

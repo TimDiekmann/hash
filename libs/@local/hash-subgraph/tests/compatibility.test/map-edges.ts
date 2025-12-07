@@ -35,7 +35,7 @@ export const mapOutwardEdge = (
       return {
         ...outwardEdge,
         rightEndpoint: {
-          baseId: outwardEdge.rightEndpoint.baseId as BaseUrl,
+          baseId: outwardEdge.rightEndpoint.baseId,
           revisionId:
             `${outwardEdge.rightEndpoint.revisionId}` as OntologyTypeRevisionId,
         },
@@ -108,7 +108,7 @@ export const mapOutwardEdge = (
             rightEndpoint: {
               baseId: (
                 outwardEdge.rightEndpoint as OntologyTypeVertexIdGraphApi
-              ).baseId as BaseUrl,
+              ).baseId,
               revisionId: `${
                 (outwardEdge.rightEndpoint as OntologyTypeVertexIdGraphApi)
                   .revisionId
