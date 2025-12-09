@@ -7090,17 +7090,17 @@
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
 
-"@redocly/cli@2.12.2":
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.12.2.tgz#88b57777cd0b4a310c25e1e65b5da2de741853de"
-  integrity sha512-2fQ1f0xTRHJ9LF/qC58qxVolJwkljL0fDerRuVHnSMgQNqNN11LPe+aqzeENxEQTlqdpH4Pz4WbORLS0gVqLJg==
+"@redocly/cli@2.12.3":
+  version "2.12.3"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.12.3.tgz#e6f921eb49d1977514a157a4a932dd0c9c2b384a"
+  integrity sha512-1SDW551scNdb4HmNpzyUf4gjsK89KkRUeXF91VVMRkQ5+lFEq1Nj259jN1M25uOd/cg1QjKE3kIbnN1dxPa3ng==
   dependencies:
     "@opentelemetry/exporter-trace-otlp-http" "0.202.0"
     "@opentelemetry/resources" "2.0.1"
     "@opentelemetry/sdk-trace-node" "2.0.1"
     "@opentelemetry/semantic-conventions" "1.34.0"
-    "@redocly/openapi-core" "2.12.2"
-    "@redocly/respect-core" "2.12.2"
+    "@redocly/openapi-core" "2.12.3"
+    "@redocly/respect-core" "2.12.3"
     abort-controller "^3.0.0"
     chokidar "^3.5.1"
     colorette "^1.2.0"
@@ -7119,6 +7119,7 @@
     set-cookie-parser "^2.3.5"
     simple-websocket "^9.0.0"
     styled-components "^6.0.7"
+    ulid "^3.0.1"
     undici "^6.21.3"
     yargs "17.0.1"
 
@@ -7134,10 +7135,10 @@
   dependencies:
     json-schema-to-ts "2.7.2"
 
-"@redocly/openapi-core@2.12.2":
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.12.2.tgz#21668659331b6e265ec6f698dc0e57537c726ab2"
-  integrity sha512-UisEJGpGJWrX0UNO1cWDNcC3U2DSMPGAvrRmBz93j5ABo8DwbqgrSTIVaqp6AKqCD4+++WE7VhvSFSztVGU2hg==
+"@redocly/openapi-core@2.12.3":
+  version "2.12.3"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.12.3.tgz#a70d2170c1dfcf18c26f71c1e6531f260d8c67a9"
+  integrity sha512-3gdSRftIeUbzXvwDi/tBjO0uj9PzR0XzbWjNwuu3HlVXJ1ElB+K31AnzQ2iA6mjIHq9uvmLRXAs9MsP/0Hbzug==
   dependencies:
     "@redocly/ajv" "^8.17.1"
     "@redocly/config" "^0.40.0"
@@ -7164,15 +7165,15 @@
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/respect-core@2.12.2":
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.12.2.tgz#2384278e1fc7a08b65721c10281cd51ef1bc58fc"
-  integrity sha512-CxZVyI/wc691tn81xizYoIOTQ1ofbpE0RNeUR0OJSRc4Rk6lO8xCxja9exZpNs383EFEk7IMaf2QScn6yQop+A==
+"@redocly/respect-core@2.12.3":
+  version "2.12.3"
+  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.12.3.tgz#d0fd7337251188c8953bf4f61ac61b979d5e1236"
+  integrity sha512-ZYqrLBlRVVHwgPawOjo94sKmeuuien77xtkXluTa6+y/wkQ8c5oYY7OqWbasMv0IoxSPehwVMa0AL0OCQP3uCQ==
   dependencies:
     "@faker-js/faker" "^7.6.0"
     "@noble/hashes" "^1.8.0"
     "@redocly/ajv" "8.17.1"
-    "@redocly/openapi-core" "2.12.2"
+    "@redocly/openapi-core" "2.12.3"
     better-ajv-errors "^1.2.0"
     colorette "^2.0.20"
     json-pointer "^0.6.2"
@@ -30695,6 +30696,11 @@ uglify-js@^3.1.4:
   version "3.17.4"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.17.4.tgz#61678cf5fa3f5b7eb789bb345df29afb8257c22c"
   integrity "sha1-YWeM9fo/W363ibs0XfKa+4JXwiw= sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g=="
+
+ulid@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/ulid/-/ulid-3.0.2.tgz#b6a1f2a3de7852e39aa86bf497a8e33b1867c984"
+  integrity sha512-yu26mwteFYzBAot7KVMqFGCVpsF6g8wXfJzQUHvu1no3+rRRSFcSV2nKeYvNPLD2J4b08jYBDhHUjeH0ygIl9w==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
