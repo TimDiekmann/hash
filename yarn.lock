@@ -7090,17 +7090,17 @@
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
 
-"@redocly/cli@2.12.5":
-  version "2.12.5"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.12.5.tgz#b27e3b9d605d20a8640b3aa2ebb0c1b6c368f447"
-  integrity sha512-/kIIKHRpsIu/QxvLzsuxsFFbMJqQmCcbcZUSkNhbeJdYkB+3y5R6xpsLOlcaC33wJePcbDg2v3VYfKEhbU6rtA==
+"@redocly/cli@2.12.6":
+  version "2.12.6"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.12.6.tgz#d509a9a327258cd1ed2777d1bf0569c56d3cf62d"
+  integrity sha512-GAg0JzSxK5ZXAHQAAGNwXpDCl82VuJssV+kN0PFVb4IzZDq4tXtkZeS7v8YrD7h7sP2TzMEpxxQWumRAFVb3Lg==
   dependencies:
     "@opentelemetry/exporter-trace-otlp-http" "0.202.0"
     "@opentelemetry/resources" "2.0.1"
     "@opentelemetry/sdk-trace-node" "2.0.1"
     "@opentelemetry/semantic-conventions" "1.34.0"
-    "@redocly/openapi-core" "2.12.5"
-    "@redocly/respect-core" "2.12.5"
+    "@redocly/openapi-core" "2.12.6"
+    "@redocly/respect-core" "2.12.6"
     abort-controller "^3.0.0"
     chokidar "^3.5.1"
     colorette "^1.2.0"
@@ -7135,10 +7135,10 @@
   dependencies:
     json-schema-to-ts "2.7.2"
 
-"@redocly/openapi-core@2.12.5":
-  version "2.12.5"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.12.5.tgz#5ae014d52fec47788c7707d09e66b8c7ceb01ffa"
-  integrity sha512-PlzsfOgPUWg4OmyznsIWQ6EnfZK6KSOn2MG4sZS3DY9cHgno5YywNy8zFQWHADXLqR7hTw2M7VvbiMKVJxzyiA==
+"@redocly/openapi-core@2.12.6":
+  version "2.12.6"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.12.6.tgz#6415383d536eb3bf3174321a8d325d3f1aaca617"
+  integrity sha512-X4NK5wW0lr1Cdd5CB/St6hABU7OLw3kaI9gxVODENuxcMCIWa27v8AZwUJom5arp3f9kY0KJwNNqBghrWDQC+Q==
   dependencies:
     "@redocly/ajv" "^8.17.1"
     "@redocly/config" "^0.41.0"
@@ -7165,15 +7165,15 @@
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/respect-core@2.12.5":
-  version "2.12.5"
-  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.12.5.tgz#3303a6f78877b10d66e3574a4fdcbcc907a7705f"
-  integrity sha512-c0Tj+Yqd48uCD+fo0WtNeHeVIBkSWNpyT+L3ViAyMXxWD6HiMaA7JTb+IXJXhWdcUrVwd4l1gMuduSyvzFX2gg==
+"@redocly/respect-core@2.12.6":
+  version "2.12.6"
+  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.12.6.tgz#b3fc75b4a9bb9e9d8bc7fd228dd184a17efe7f34"
+  integrity sha512-F9Zla4M9wGZGfgavWddC4AObHkfPzsTCNAmyBOAj/ub8ycjfI719MqnEZvurIMYxmVDoTv4maHnuich5IGVzlg==
   dependencies:
     "@faker-js/faker" "^7.6.0"
     "@noble/hashes" "^1.8.0"
     "@redocly/ajv" "8.17.1"
-    "@redocly/openapi-core" "2.12.5"
+    "@redocly/openapi-core" "2.12.6"
     better-ajv-errors "^1.2.0"
     colorette "^2.0.20"
     json-pointer "^0.6.2"
@@ -22187,10 +22187,10 @@ markdown-to-jsx@^7.1.8:
   resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-7.2.0.tgz#e7b46b65955f6a04d48a753acd55874a14bdda4b"
   integrity sha512-3l4/Bigjm4bEqjCR6Xr+d4DtM1X6vvtGsMGSjJYyep8RjjIvcWtrXBS8Wbfe1/P+atKNMccpsraESIaWVplzVg==
 
-markdownlint-cli@0.46.0:
-  version "0.46.0"
-  resolved "https://registry.yarnpkg.com/markdownlint-cli/-/markdownlint-cli-0.46.0.tgz#7e6905cf26ef31c6b9f7cc7d6eeb600cec42a391"
-  integrity sha512-4gxTNzPjpLnY7ftrEZD4flPY0QBkQLiqezb6KURFSkV+vPHFOsYw8OMtY6fu82Yt8ghtSrWegpYdq1ix25VFLQ==
+markdownlint-cli@0.47.0:
+  version "0.47.0"
+  resolved "https://registry.yarnpkg.com/markdownlint-cli/-/markdownlint-cli-0.47.0.tgz#5383dc492ac03c0d5c971c72308f2d5ddcfec5d5"
+  integrity sha512-HOcxeKFAdDoldvoYDofd85vI8LgNWy8vmYpCwnlLV46PJcodmGzD7COSSBlhHwsfT4o9KrAStGodImVBus31Bg==
   dependencies:
     commander "~14.0.2"
     deep-extend "~0.6.0"
@@ -22199,16 +22199,16 @@ markdownlint-cli@0.46.0:
     jsonc-parser "~3.3.1"
     jsonpointer "~5.0.1"
     markdown-it "~14.1.0"
-    markdownlint "~0.39.0"
+    markdownlint "~0.40.0"
     minimatch "~10.1.1"
     run-con "~1.3.2"
     smol-toml "~1.5.2"
     tinyglobby "~0.2.15"
 
-markdownlint@~0.39.0:
-  version "0.39.0"
-  resolved "https://registry.yarnpkg.com/markdownlint/-/markdownlint-0.39.0.tgz#28b500633121b89cc884998d27d92427ec50fd21"
-  integrity sha512-Xt/oY7bAiHwukL1iru2np5LIkhwD19Y7frlsiDILK62v3jucXCD6JXlZlwMG12HZOR+roHIVuJZrfCkOhp6k3g==
+markdownlint@~0.40.0:
+  version "0.40.0"
+  resolved "https://registry.yarnpkg.com/markdownlint/-/markdownlint-0.40.0.tgz#1c6e29385f810f0b860f0af4866208e572bd8c59"
+  integrity sha512-UKybllYNheWac61Ia7T6fzuQNDZimFIpCg2w6hHjgV1Qu0w1TV0LlSgryUGzM0bkKQCBhy2FDhEELB73Kb0kAg==
   dependencies:
     micromark "4.0.2"
     micromark-core-commonmark "2.0.3"
@@ -22218,6 +22218,7 @@ markdownlint@~0.39.0:
     micromark-extension-gfm-table "2.1.1"
     micromark-extension-math "3.1.0"
     micromark-util-types "2.0.2"
+    string-width "8.1.0"
 
 marked@4.1.1:
   version "4.1.1"
@@ -29154,6 +29155,14 @@ string-trim-spaces-only@^5.0.10:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.1"
 
+string-width@8.1.0, string-width@^8.0.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-8.1.0.tgz#9e9fb305174947cf45c30529414b5da916e9e8d1"
+  integrity sha512-Kxl3KJGb/gxkaUMOjRsQ8IrXiGW75O4E3RPjFIINOVH8AMl2SQ/yWdTzWwF3FevIX9LcMAjJW+GRwAlAbTSXdg==
+  dependencies:
+    get-east-asian-width "^1.3.0"
+    strip-ansi "^7.1.0"
+
 string-width@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-1.0.2.tgz#118bdf5b8cdc51a2a7e70d211e07e2b0b9b107d3"
@@ -29196,14 +29205,6 @@ string-width@^7.0.0:
   dependencies:
     emoji-regex "^10.3.0"
     get-east-asian-width "^1.0.0"
-    strip-ansi "^7.1.0"
-
-string-width@^8.0.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/string-width/-/string-width-8.1.0.tgz#9e9fb305174947cf45c30529414b5da916e9e8d1"
-  integrity sha512-Kxl3KJGb/gxkaUMOjRsQ8IrXiGW75O4E3RPjFIINOVH8AMl2SQ/yWdTzWwF3FevIX9LcMAjJW+GRwAlAbTSXdg==
-  dependencies:
-    get-east-asian-width "^1.3.0"
     strip-ansi "^7.1.0"
 
 string.prototype.matchall@^4.0.10:
