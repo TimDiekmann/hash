@@ -21,7 +21,7 @@
     "@local/tsconfig": "0.0.0-private",
     "@redocly/cli": "2.14.3",
     "@types/node": "20.16.5",
-    "eslint": "8.57.0",
+    "eslint": "9.39.2",
     "fix-esm-import-path": "1.10.0",
     "rimraf": "6.1.2",
     "typescript": "5.5.4"
