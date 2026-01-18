@@ -31,10 +31,10 @@
   "devDependencies": {
     "@local/eslint-config": "0.0.0-private",
     "@local/tsconfig": "0.0.0-private",
-    "@vitest/coverage-istanbul": "4.0.16",
+    "@vitest/coverage-istanbul": "4.0.17",
     "eslint": "8.57.0",
     "rimraf": "6.1.2",
     "typescript": "5.5.4",
-    "vitest": "4.0.16"
+    "vitest": "4.0.17"
   }
 }
