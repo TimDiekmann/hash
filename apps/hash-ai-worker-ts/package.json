@@ -106,10 +106,10 @@
     "@types/node": "20.16.5",
     "@types/papaparse": "5.3.14",
     "@types/sanitize-html": "2.13.0",
-    "@vitest/coverage-istanbul": "4.0.16",
+    "@vitest/coverage-istanbul": "4.0.17",
     "eslint": "8.57.0",
     "rimraf": "6.1.2",
     "vite-tsconfig-paths": "6.0.4",
-    "vitest": "4.0.16"
+    "vitest": "4.0.17"
   }
 }
