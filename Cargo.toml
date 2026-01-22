@@ -99,7 +99,7 @@ multistream-select = { version = "=0.13.0", default-features = false }
 libp2p-core = { version = "=0.43.2", default-features = false }
 libp2p-identity = { version = "=0.2.13", default-features = false }
 libp2p-ping = { version = "=0.47.0", default-features = false }
-libp2p-swarm = { version = "=0.47.0", default-features = false }
+libp2p-swarm = { version = "=0.47.1", default-features = false }
 libp2p-yamux = { version = "=0.47.0", default-features = false }
 prometheus-client = { version = "=0.24.0", default-features = false }
 postgres-types = { version = "=0.2.12", default-features = false }
