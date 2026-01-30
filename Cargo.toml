@@ -76,7 +76,7 @@ axum = "0.8.0"
 axum-core = "0.5.0"
 bumpalo = { version = "=3.19.1", default-features = false }
 bytes = "1.6.0"
-clap_builder = { version = "=4.5.55", default-features = false, features = ["std"] }
+clap_builder = { version = "=4.5.56", default-features = false, features = ["std"] }
 criterion = { version = "=0.8.1" }
 deadpool = { version = "=0.12.3", default-features = false }
 deadpool-postgres = { version = "=0.14.1", default-features = false }
@@ -137,7 +137,7 @@ base64 = { version = "=0.22.1", default-features = false }
 bitvec = { version = "=1.0.1", default-features = false }
 bytes-utils = { version = "=0.1.4", default-features = false }
 chrono = { version = "=0.4.43", default-features = false }
-clap = { version = "=4.5.55", features = ["std", "color", "help", "usage", "error-context", "suggestions"] }
+clap = { version = "=4.5.56", features = ["std", "color", "help", "usage", "error-context", "suggestions"] }
 clap_complete = { version = "=4.5.65", default-features = false }
 coverage-helper = { version = "=0.2.4", default-features = false }
 criterion-macro = { version = "=0.4.0", default-features = false }
