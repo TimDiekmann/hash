@@ -207,7 +207,7 @@ tracing-flame = { version = "=0.2.0", default-features = false }
 tracing-opentelemetry = { version = "=0.32.1", default-features = false }
 trybuild = { version = "=1.0.115", default-features = false }
 tsify = { version = "=0.5.6", default-features = false }
-unicode-ident = { version = "=1.0.22", default-features = false }
+unicode-ident = { version = "=1.0.23", default-features = false }
 virtue = { version = "=0.0.19", default-features = false }
 walkdir = { version = "=2.5.0", default-features = false }
 winnow = { version = "=0.7.14", default-features = false }
