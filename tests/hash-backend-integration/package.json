@@ -40,7 +40,7 @@
     "@local/tsconfig": "0.0.0-private",
     "@types/node-fetch": "2.6.11",
     "@vitest/coverage-istanbul": "4.0.18",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "rimraf": "6.1.2",
     "typescript": "5.5.4",
     "vitest": "4.0.18"
