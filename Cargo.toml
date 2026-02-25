@@ -181,7 +181,7 @@ sentry = { version = "=0.46.2", default-features = false, features = ["backtrace
 seq-macro = { version = "=0.3.6", default-features = false }
 serde-value = { version = "=0.7.0", default-features = false }
 serde_plain = { version = "=1.0.2", default-features = false }
-serde_with = { version = "=3.16.1", default-features = false }
+serde_with = { version = "=3.17.0", default-features = false }
 similar-asserts = { version = "=1.7.0", default-features = false }
 spin = { version = "=0.10.0", default-features = false }
 supports-color = { version = "=3.0.2", default-features = false }
