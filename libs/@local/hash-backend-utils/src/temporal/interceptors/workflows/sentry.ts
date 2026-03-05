@@ -10,9 +10,7 @@ import type { SentrySinks } from "../../sinks/sentry.js";
 
 const { sentry } = proxySinks<SentrySinks>();
 
-class SentryWorkflowInboundInterceptor
-  implements WorkflowInboundCallsInterceptor
-{
+class SentryWorkflowInboundInterceptor implements WorkflowInboundCallsInterceptor {
   constructor(public readonly workflowType: string) {}
 
   execute = async (

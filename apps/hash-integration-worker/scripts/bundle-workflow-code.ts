@@ -15,9 +15,7 @@ async function bundle() {
   const { code } = await bundleWorkflowCode({
     workflowsPath: require.resolve("../src/workflows"),
     workflowInterceptorModules: [
-      require.resolve(
-        "@local/hash-backend-utils/temporal/interceptors/workflows/sentry",
-      ),
+      require.resolve("@local/hash-backend-utils/temporal/interceptors/workflows/sentry"),
     ],
   });
   const codePath = path.join(__dirname, "../dist/workflow-bundle.js");

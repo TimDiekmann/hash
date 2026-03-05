@@ -7,8 +7,8 @@
   "exports": {
     "./type-defs/*": {
       "types": "./type-defs/*.ts",
-      "default": "./type-defs/*.ts",
-      "node": "./type-defs/*.ts"
+      "node": "./type-defs/*.ts",
+      "default": "./type-defs/*.ts"
     }
   },
   "scripts": {

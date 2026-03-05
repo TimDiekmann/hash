@@ -134,8 +134,8 @@ export const PropertyRow = ({
               const array = "type" in ref;
               const required = Boolean(
                 selectedProperty &&
-                  "required" in selectedProperty &&
-                  selectedProperty.required?.includes(propertyId),
+                "required" in selectedProperty &&
+                selectedProperty.required?.includes(propertyId),
               );
               return [
                 ...childrenArray,

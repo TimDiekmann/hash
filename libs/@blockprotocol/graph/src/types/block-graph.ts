@@ -60,8 +60,8 @@ export type GraphBlockMessageCallbacks = {
 };
 
 export type GraphEmbedderMessages<
-  Key extends
-    keyof GraphBlockMessageCallbacks = keyof GraphBlockMessageCallbacks,
+  Key extends keyof GraphBlockMessageCallbacks =
+    keyof GraphBlockMessageCallbacks,
 > = {
   [key in Key]: ({
     data,
@@ -218,8 +218,8 @@ export type GraphEmbedderMessageCallbacks = {
 };
 
 export type GraphBlockMessages<
-  Key extends
-    keyof GraphEmbedderMessageCallbacks = keyof GraphEmbedderMessageCallbacks,
+  Key extends keyof GraphEmbedderMessageCallbacks =
+    keyof GraphEmbedderMessageCallbacks,
 > = {
   [key in Key]: ({
     data,
