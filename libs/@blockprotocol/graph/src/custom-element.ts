@@ -12,10 +12,10 @@ import { getOutgoingLinkAndTargetEntities, getRoots } from "./stdlib.js";
 export interface BlockElementBase<
   RootEntity extends Entity = Entity,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars -- this is used in the class definition
-  RootEntityLinkedEntities extends
-    LinkEntityAndRightEntity[] = LinkEntityAndRightEntity[],
-> extends LitElement,
-    BlockGraphProperties<RootEntity> {}
+  RootEntityLinkedEntities extends LinkEntityAndRightEntity[] =
+    LinkEntityAndRightEntity[],
+>
+  extends LitElement, BlockGraphProperties<RootEntity> {}
 
 /**
  * A class to use as a base for implementing Block Protocol blocks as custom elements.

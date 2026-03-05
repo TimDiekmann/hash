@@ -262,10 +262,10 @@ export type VirtualizedTableFilterValuesByFieldId<Id extends string = string> =
   Record<Id, VirtualizedTableFilterValue>;
 
 export type TableFilterProps<
-  FilterDefinitions extends
-    VirtualizedTableFilterDefinitionsByFieldId = VirtualizedTableFilterDefinitionsByFieldId,
-  FilterValues extends
-    VirtualizedTableFilterValuesByFieldId = VirtualizedTableFilterValuesByFieldId,
+  FilterDefinitions extends VirtualizedTableFilterDefinitionsByFieldId =
+    VirtualizedTableFilterDefinitionsByFieldId,
+  FilterValues extends VirtualizedTableFilterValuesByFieldId =
+    VirtualizedTableFilterValuesByFieldId,
 > = {
   filterDefinitions: FilterDefinitions;
   filterValues: FilterValues;

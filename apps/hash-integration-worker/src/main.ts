@@ -103,9 +103,7 @@ async function run() {
     sinks: { ...defaultSinks(), ...sentrySinks() },
     interceptors: {
       workflowModules: [
-        require.resolve(
-          "@local/hash-backend-utils/temporal/interceptors/workflows/sentry",
-        ),
+        require.resolve("@local/hash-backend-utils/temporal/interceptors/workflows/sentry"),
       ],
       activityInbound: [(ctx) => new SentryActivityInboundInterceptor(ctx)],
     },

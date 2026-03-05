@@ -6,9 +6,7 @@ import type {
 } from "@temporalio/worker";
 import type { Next } from "@temporalio/workflow";
 
-export class SentryActivityInboundInterceptor
-  implements ActivityInboundCallsInterceptor
-{
+export class SentryActivityInboundInterceptor implements ActivityInboundCallsInterceptor {
   constructor(public readonly context: Context) {
     this.context = context;
   }

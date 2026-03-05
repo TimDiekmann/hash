@@ -50,8 +50,7 @@ export type FileStorageKey = `${
   | ""}${EntityId}/${string}/${string}`;
 
 export interface UploadableStorageProvider
-  extends FileStorageProvider,
-    DataSource {
+  extends FileStorageProvider, DataSource {
   /**
    * Presigns a file upload request for a client to later upload a file
    * @return Promise<Object> contains the presignedPut object with the url to PUT the file to, and the file storage
