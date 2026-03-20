@@ -7185,17 +7185,17 @@
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
 
-"@redocly/cli@2.21.1":
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.21.1.tgz#fd7919f3f2fd22b3cce2333a99a51579e044dfcb"
-  integrity sha512-tqMvNzXB2dD9ThfNo3O69ZwNPfs1O41q04o1Fgc4iSNn1jpKUcE371u79qF4q/axRpbvQblZs7I6i7XwRN/zmg==
+"@redocly/cli@2.22.1":
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.22.1.tgz#8098069ba2a7b603d589583c1eb858589542178b"
+  integrity sha512-oW3k/IN0ydS1CfyTF6Ozcn4gIHDmlJ9GG9MUPjSxH0w5ZKqIU0kzxD/s08+noPjP5AYBANDcl3cJn0nPcFNEHw==
   dependencies:
     "@opentelemetry/exporter-trace-otlp-http" "0.202.0"
     "@opentelemetry/resources" "2.0.1"
     "@opentelemetry/sdk-trace-node" "2.0.1"
     "@opentelemetry/semantic-conventions" "1.34.0"
-    "@redocly/openapi-core" "2.21.1"
-    "@redocly/respect-core" "2.21.1"
+    "@redocly/openapi-core" "2.22.1"
+    "@redocly/respect-core" "2.22.1"
     abort-controller "^3.0.0"
     ajv "npm:@redocly/ajv@8.18.0"
     ajv-formats "^3.0.1"
@@ -7216,7 +7216,7 @@
     simple-websocket "^9.0.0"
     styled-components "6.3.9"
     ulid "^3.0.1"
-    undici "^6.23.0"
+    undici "^6.24.1"
     yargs "17.0.1"
 
 "@redocly/config@^0.22.0":
@@ -7231,10 +7231,10 @@
   dependencies:
     json-schema-to-ts "2.7.2"
 
-"@redocly/openapi-core@2.21.1":
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.21.1.tgz#2109e190d60ab0ed672462bde4fa7e246571c80b"
-  integrity sha512-xqO0avM42DOnninr3NqCPGgD61L1EunmDy+hQNZhuCM2/a6X0g19ZYNioQxeGw3/OlKNVeplSO26lEq52R12VQ==
+"@redocly/openapi-core@2.22.1":
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.22.1.tgz#978fd319d5e50869f45994ca07b105f31d04960c"
+  integrity sha512-sb3QYpqJZq4U31x6LRuYXgaA4byNFoTMGVLCvq8o8Om1GGv6O0/oMu6EpPZoDAYDxIsTRDPC04Lu6MLVU6D/ag==
   dependencies:
     "@redocly/ajv" "^8.18.0"
     "@redocly/config" "^0.44.1"
@@ -7262,15 +7262,15 @@
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/respect-core@2.21.1":
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.21.1.tgz#540d9d666bcf15af4f17573eca7910eb957fc0df"
-  integrity sha512-Y5betL4vL8UEElOkDoSul5X30QQj8lw7NKrE0ncvA9viN8BQqnqxhC3PBTVvpKAkCXsEDdw98C09xQ7weygT+g==
+"@redocly/respect-core@2.22.1":
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.22.1.tgz#ff4d7e44daa4c021928779a788997dd1d9f8f4d2"
+  integrity sha512-aYfiAyqmMJ6Sa8LcAewwyvya6g+oxsvVCfDJhtFeZZnO7JMnr8hmEYqQf2iCCqUGMbPdL0VcPABex15i4WYQVQ==
   dependencies:
     "@faker-js/faker" "^7.6.0"
     "@noble/hashes" "^1.8.0"
     "@redocly/ajv" "^8.18.0"
-    "@redocly/openapi-core" "2.21.1"
+    "@redocly/openapi-core" "2.22.1"
     ajv "npm:@redocly/ajv@8.18.0"
     better-ajv-errors "^1.2.0"
     colorette "^2.0.20"
@@ -30877,10 +30877,10 @@ undici-types@~6.19.2:
   resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
   integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
-undici@^6.23.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/undici/-/undici-6.23.0.tgz#7953087744d9095a96f115de3140ca3828aff3a4"
-  integrity sha512-VfQPToRA5FZs/qJxLIinmU59u0r7LXqoJkCzinq3ckNJp3vKEh7jTWN589YQ5+aoAC/TGRLyJLCPKcLQbM8r9g==
+undici@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/undici/-/undici-6.24.1.tgz#9df1425cede20b836d95634347946f79578b7e71"
+  integrity sha512-sC+b0tB1whOCzbtlx20fx3WgCXwkW627p4EA9uM+/tNNPkSS+eSEld6pAs9nDv7WbY1UUljBMYPtu9BCOrCWKA==
 
 undici@~5.28.4:
   version "5.28.4"
