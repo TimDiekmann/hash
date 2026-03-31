@@ -7192,18 +7192,18 @@
   dependencies:
     ulid "^2.3.0"
 
-"@redocly/cli@2.25.1":
-  version "2.25.1"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.25.1.tgz#c48463dc910f46b21ba85e0d8658ffcc8a78310d"
-  integrity sha512-i17Riz3CO3KMhaxMW3OPUw8ipeipnuk4wQTRu4zi2pCA/zI6GkeO/Ku7pdEwPd1LuPIR/RNBTp0YPahmyGy+2A==
+"@redocly/cli@2.25.2":
+  version "2.25.2"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.25.2.tgz#5707228eba5cde61dda8c7360760c98b6db962b4"
+  integrity sha512-kn1SiHDss3t+Ami37T6ZH5ov1fiEXF1y488bUOUgrh0pEK8VOq8+HlPbdte/cH0K+dWPhuLyKNACd+KhMQPjCw==
   dependencies:
     "@opentelemetry/exporter-trace-otlp-http" "0.202.0"
     "@opentelemetry/resources" "2.0.1"
     "@opentelemetry/sdk-trace-node" "2.0.1"
     "@opentelemetry/semantic-conventions" "1.34.0"
     "@redocly/cli-otel" "0.1.2"
-    "@redocly/openapi-core" "2.25.1"
-    "@redocly/respect-core" "2.25.1"
+    "@redocly/openapi-core" "2.25.2"
+    "@redocly/respect-core" "2.25.2"
     abort-controller "^3.0.0"
     ajv "npm:@redocly/ajv@8.18.0"
     ajv-formats "^3.0.1"
@@ -7214,7 +7214,7 @@
     handlebars "^4.7.6"
     https-proxy-agent "^7.0.5"
     mobx "^6.0.4"
-    picomatch "^4.0.3"
+    picomatch "^4.0.4"
     pluralize "^8.0.0"
     react "^17.0.0 || ^18.2.0 || ^19.2.1"
     react-dom "^17.0.0 || ^18.2.0 || ^19.2.1"
@@ -7232,26 +7232,26 @@
   resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.22.2.tgz#9a05e694816d53a5236cf8768d3cad0e49d8b116"
   integrity sha512-roRDai8/zr2S9YfmzUfNhKjOF0NdcOIqF7bhf4MVC5UxpjIysDjyudvlAiVbpPHp3eDRWbdzUgtkK1a7YiDNyQ==
 
-"@redocly/config@^0.44.2":
-  version "0.44.2"
-  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.44.2.tgz#c8e0150d330d3f7bc77465fa2bad62aa423a38dc"
-  integrity sha512-/77Y/C4aDCa0XkRYffISHH1K816KDmmFY1LX3TwODJ4Li+DFhvyWiMm7ofFCEssKwNjs3fzGW/ISKOsDFdirJw==
+"@redocly/config@^0.45.0":
+  version "0.45.0"
+  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.45.0.tgz#38afcd2ecdd56f44a80b23d0c733e2449a70f559"
+  integrity sha512-V+wNusPQUaYV1c5s9iptfKQ2Ggno4bMeiyXdNILxqZS87gttwPfqlqHKHKFyz006voS3JsR295cbpx3GlsIxKg==
   dependencies:
     json-schema-to-ts "2.7.2"
 
-"@redocly/openapi-core@2.25.1":
-  version "2.25.1"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.25.1.tgz#6ba66c56f522920d8cb2ad58321a01c13cc317b6"
-  integrity sha512-6n1gkzvqLhU1/rCSDvLqSrceiXHMw5YTqrao63nb/SLxPzbhBEW61D9VAvu2dn5HGsanYc9QH0j73W/D3eYsVw==
+"@redocly/openapi-core@2.25.2":
+  version "2.25.2"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.25.2.tgz#9af7b3931eaaadcf36f4b194109cd201ae531ede"
+  integrity sha512-HIvxgwxQct/IdRJjjqu4g8BLpCik6I3zxp8JFJpRtmY1TSIZAOZjJwlkoh4uQcy/nCP+psSMgQvzjVGml3k6+w==
   dependencies:
     "@redocly/ajv" "^8.18.0"
-    "@redocly/config" "^0.44.2"
+    "@redocly/config" "^0.45.0"
     ajv "npm:@redocly/ajv@8.18.0"
     ajv-formats "^3.0.1"
     colorette "^1.2.0"
     js-levenshtein "^1.1.6"
     js-yaml "^4.1.0"
-    picomatch "^4.0.3"
+    picomatch "^4.0.4"
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
@@ -7270,15 +7270,15 @@
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/respect-core@2.25.1":
-  version "2.25.1"
-  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.25.1.tgz#a06ecca7acc249730d6941746468eb3e85a2a210"
-  integrity sha512-iF/7uP/kI5BPzdp4e2Ug3UQWU1ghYJoAPURFcqPvtRc0S4G3olyecJggOhDQqyC8iDHvN7SJNmm/O3VWn4QU4Q==
+"@redocly/respect-core@2.25.2":
+  version "2.25.2"
+  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.25.2.tgz#76ab3a3b1a1459aeeaa06b32741280a07e7077fd"
+  integrity sha512-GpvmjY2x8u4pAGNts7slexuKDzDWHNUB4gey9/rSqvC8IaqY49vkvMuRodIBwCsqXhn2rpkJbar1UK3rAOuy7g==
   dependencies:
     "@faker-js/faker" "^7.6.0"
     "@noble/hashes" "^1.8.0"
     "@redocly/ajv" "^8.18.0"
-    "@redocly/openapi-core" "2.25.1"
+    "@redocly/openapi-core" "2.25.2"
     ajv "npm:@redocly/ajv@8.18.0"
     better-ajv-errors "^1.2.0"
     colorette "^2.0.20"
@@ -7286,7 +7286,7 @@
     jsonpath-rfc9535 "1.3.0"
     openapi-sampler "^1.7.1"
     outdent "^0.8.0"
-    picomatch "^4.0.3"
+    picomatch "^4.0.4"
 
 "@repeaterjs/repeater@^3.0.4":
   version "3.0.4"
@@ -25707,10 +25707,10 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3, picomatch@^2.3.0, picomatc
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity "sha1-O6ODNzNkbZ0+SZWUbBNlpn+wekI= sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="
 
-picomatch@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-4.0.3.tgz#796c76136d1eead715db1e7bad785dedd695a042"
-  integrity sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==
+picomatch@^4.0.3, picomatch@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-4.0.4.tgz#fd6f5e00a143086e074dffe4c924b8fb293b0589"
+  integrity sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==
 
 pidtree@^0.6.0:
   version "0.6.0"
