@@ -7192,18 +7192,18 @@
   dependencies:
     ulid "^2.3.0"
 
-"@redocly/cli@2.25.3":
-  version "2.25.3"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.25.3.tgz#8323cae49f4285479af970453461abbe5bb2544c"
-  integrity sha512-02wjApwJwGD+kGWRoiFVY0Hq960ydMAMHrK3AJH2LMiYNYcrzAr1FSbA3OSylvg2gx3w/r1r710B+iMz3KJKbw==
+"@redocly/cli@2.25.4":
+  version "2.25.4"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.25.4.tgz#c2305862ac7263fd15f09155c9cff713dc83a132"
+  integrity sha512-ypBv8ZhckTzcOfsFH2VILsLqk00bJ1tI0POtlaEf8z0rDsnmD8auUETkMzw8wlUB+aQM7+VSzpSsmcmqeSgzWQ==
   dependencies:
     "@opentelemetry/exporter-trace-otlp-http" "0.202.0"
     "@opentelemetry/resources" "2.0.1"
     "@opentelemetry/sdk-trace-node" "2.0.1"
     "@opentelemetry/semantic-conventions" "1.34.0"
     "@redocly/cli-otel" "0.1.2"
-    "@redocly/openapi-core" "2.25.3"
-    "@redocly/respect-core" "2.25.3"
+    "@redocly/openapi-core" "2.25.4"
+    "@redocly/respect-core" "2.25.4"
     abort-controller "^3.0.0"
     ajv "npm:@redocly/ajv@8.18.0"
     ajv-formats "^3.0.1"
@@ -7211,7 +7211,7 @@
     cookie "^0.7.2"
     dotenv "16.4.7"
     glob "^13.0.5"
-    handlebars "^4.7.6"
+    handlebars "^4.7.9"
     https-proxy-agent "^7.0.5"
     mobx "^6.0.4"
     picomatch "^4.0.4"
@@ -7232,20 +7232,20 @@
   resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.22.2.tgz#9a05e694816d53a5236cf8768d3cad0e49d8b116"
   integrity sha512-roRDai8/zr2S9YfmzUfNhKjOF0NdcOIqF7bhf4MVC5UxpjIysDjyudvlAiVbpPHp3eDRWbdzUgtkK1a7YiDNyQ==
 
-"@redocly/config@^0.45.0":
-  version "0.45.0"
-  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.45.0.tgz#38afcd2ecdd56f44a80b23d0c733e2449a70f559"
-  integrity sha512-V+wNusPQUaYV1c5s9iptfKQ2Ggno4bMeiyXdNILxqZS87gttwPfqlqHKHKFyz006voS3JsR295cbpx3GlsIxKg==
+"@redocly/config@^0.46.0":
+  version "0.46.0"
+  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.46.0.tgz#fce540428b5e4e1f5f20ddc7f4e46e756b3e77d5"
+  integrity sha512-FZEprNEkmLITKKdv5blIai1qiCcc4dn5+96AjWnmFQmH/oz/OyBiXBSi752/M+Wmype7aH2uRywSCuYlu4CgVA==
   dependencies:
     json-schema-to-ts "2.7.2"
 
-"@redocly/openapi-core@2.25.3":
-  version "2.25.3"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.25.3.tgz#83e11c2f9fe4e79b1642a08598b0b9e13c8f9d3c"
-  integrity sha512-GIu3Mdym5IDIPCvXTzMZ6TQw/+7sKd52PdysxNVe7zBk22ExSGnVE9UAk9BaLOzXT77PJWDUwaimBdJoPpxHMA==
+"@redocly/openapi-core@2.25.4":
+  version "2.25.4"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.25.4.tgz#8d84423dd001b043890eb509e668c77ea5653f60"
+  integrity sha512-zYdKQEsowPNtkTixrfbn5DySWBLQpTsISthVBBEPAa3OZC75UI76CbHXEamJ8Kmlead9IkD5RbgeJvxqJ5/H6Q==
   dependencies:
     "@redocly/ajv" "^8.18.0"
-    "@redocly/config" "^0.45.0"
+    "@redocly/config" "^0.46.0"
     ajv "npm:@redocly/ajv@8.18.0"
     ajv-formats "^3.0.1"
     colorette "^1.2.0"
@@ -7270,15 +7270,15 @@
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/respect-core@2.25.3":
-  version "2.25.3"
-  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.25.3.tgz#008b7e1951f4a5591e7a5a13b7a49723c94aa444"
-  integrity sha512-07m80JYdp7J7kH4D1Vqdpa2ZBFCv3QAwCoh2w9H3OjuT/rXQkBSkJQm1n70fzO/HuUf4azzULdp2XnsIpxP2qw==
+"@redocly/respect-core@2.25.4":
+  version "2.25.4"
+  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.25.4.tgz#bc612aea03df937fc207063ee504ef555d5614cd"
+  integrity sha512-0xMbcSft+9Q2sO1wSJMxo510Aqc/kGF/AmUK3OaLQvGvKUgOqq2Op/0aorNQJk6s8WBEH4UN4eFt7fUzUeXs8g==
   dependencies:
     "@faker-js/faker" "^7.6.0"
     "@noble/hashes" "^1.8.0"
     "@redocly/ajv" "^8.18.0"
-    "@redocly/openapi-core" "2.25.3"
+    "@redocly/openapi-core" "2.25.4"
     ajv "npm:@redocly/ajv@8.18.0"
     better-ajv-errors "^1.2.0"
     colorette "^2.0.20"
@@ -19189,10 +19189,10 @@ handle-thing@^2.0.0:
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.1.tgz#857f79ce359580c340d43081cc648970d0bb234e"
   integrity "sha1-hX95zjWVgMNA1DCBzGSJcNC7I04= sha512-9Qn4yBxelxoh2Ow62nP+Ka/kMnOXRi8BXnRaUwezLNhqelnN49xKz4F/dPP8OYLxLxq6JDtZb2i9XznUQbNPTg=="
 
-handlebars@^4.7.6, handlebars@^4.7.7, handlebars@^4.7.8:
-  version "4.7.8"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.8.tgz#41c42c18b1be2365439188c77c6afae71c0cd9e9"
-  integrity sha512-vafaFqs8MZkRrSX7sFVUdo3ap/eNiLnb4IakshzvP56X5Nr1iGKAIqdX6tMlm6HcNRIkr6AxO5jFEoJzzpT8aQ==
+handlebars@^4.7.7, handlebars@^4.7.8, handlebars@^4.7.9:
+  version "4.7.9"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.9.tgz#6f139082ab58dc4e5a0e51efe7db5ae890d56a0f"
+  integrity sha512-4E71E0rpOaQuJR2A3xDZ+GM1HyWYv1clR58tC8emQNeQe3RH7MAzSbat+V0wG78LQBo6m6bzSG/L4pBuCsgnUQ==
   dependencies:
     minimist "^1.2.5"
     neo-async "^2.6.2"
