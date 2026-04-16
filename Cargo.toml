@@ -88,7 +88,7 @@ futures-core = { version = "=0.3.32", default-features = false }
 futures-io = { version = "=0.3.32", default-features = false }
 futures-sink = { version = "=0.3.32", default-features = false }
 futures-util = { version = "=0.3.32", default-features = false }
-hashbrown = { version = "=0.16.1", features = ["nightly"] }
+hashbrown = { version = "=0.17.0", features = ["nightly"] }
 http = { version = "=1.4.0", default-features = false }
 inferno = { version = "=0.12.6", default-features = false }
 iso8601-duration = { version = "=0.2.0", default-features = false }
