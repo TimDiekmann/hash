@@ -7175,7 +7175,17 @@
   resolved "https://registry.yarnpkg.com/@redis/time-series/-/time-series-1.0.5.tgz#a6d70ef7a0e71e083ea09b967df0a0ed742bc6ad"
   integrity sha512-IFjIgTusQym2B5IZJG3XKr5llka7ey84fw/NOYqESP5WUfQs9zz1ww/9+qoz4ka/S6KcGBodzlCeZ5UImKbscg==
 
-"@redocly/ajv@^8.11.2", "@redocly/ajv@^8.18.1":
+"@redocly/ajv@8.11.2":
+  version "8.11.2"
+  resolved "https://registry.yarnpkg.com/@redocly/ajv/-/ajv-8.11.2.tgz#46e1bf321ec0ac1e0fd31dea41a3d1fcbdcda0b5"
+  integrity sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
+    uri-js-replace "^1.0.1"
+
+"@redocly/ajv@^8.18.1":
   version "8.18.3"
   resolved "https://registry.yarnpkg.com/@redocly/ajv/-/ajv-8.18.3.tgz#a925753d9a33375219f1b2ba91aef320f9929577"
   integrity sha512-l42u0of3hY98sN2A+M4qTX1O/KrpgGH32Hu9kP2GtHyD5Dfqq86PKFLe5dwaD8DEnNmlOlll2BAmeEtf0DaySg==
@@ -7192,18 +7202,18 @@
   dependencies:
     ulid "^2.3.0"
 
-"@redocly/cli@2.31.5":
-  version "2.31.5"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.31.5.tgz#07b75dba9b1d53c9dd8f6959865f125af3280561"
-  integrity sha512-+mod7DgdS85mm/16QWDqLDaOOcPNEstcDC5X6hATsKbk3bh/mb15KIu/lkxj43rZItuVjroiv721MrK+yZv2cQ==
+"@redocly/cli@2.31.6":
+  version "2.31.6"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.31.6.tgz#3f9e05636a9c07e389e4a6c3322242e93c45a235"
+  integrity sha512-OQ7t/kDlewWIqYlo0jnNTUIkhmAuZx6P2OQmuZlaxghdRXbu/k+MevXSjR5uD2RGw4GLYsasGjUWPUonp6liTQ==
   dependencies:
     "@opentelemetry/exporter-trace-otlp-http" "0.214.0"
     "@opentelemetry/resources" "2.6.1"
     "@opentelemetry/sdk-trace-node" "2.6.1"
     "@opentelemetry/semantic-conventions" "1.40.0"
     "@redocly/cli-otel" "0.3.1"
-    "@redocly/openapi-core" "2.31.5"
-    "@redocly/respect-core" "2.31.5"
+    "@redocly/openapi-core" "2.31.6"
+    "@redocly/respect-core" "2.31.6"
     ajv "npm:@redocly/ajv@8.18.1"
     ajv-formats "^3.0.1"
     colorette "^1.2.0"
@@ -7215,21 +7225,21 @@
     mobx "^6.0.4"
     picomatch "^4.0.4"
     pluralize "^8.0.0"
-    react "^17.0.0 || ^18.2.0 || ^19.2.1"
-    react-dom "^17.0.0 || ^18.2.0 || ^19.2.1"
-    redoc "2.5.1"
+    react "^17.0.0 || ^18.2.0 || ^19.2.7"
+    react-dom "^17.0.0 || ^18.2.0 || ^19.2.7"
+    redoc "2.5.3"
     semver "^7.5.2"
     set-cookie-parser "^2.3.5"
     simple-websocket "^9.0.0"
-    styled-components "6.4.1"
+    styled-components "6.4.2"
     ulid "^3.0.1"
     undici "6.24.0"
     yargs "17.0.1"
 
-"@redocly/config@^0.22.0":
-  version "0.22.2"
-  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.22.2.tgz#9a05e694816d53a5236cf8768d3cad0e49d8b116"
-  integrity sha512-roRDai8/zr2S9YfmzUfNhKjOF0NdcOIqF7bhf4MVC5UxpjIysDjyudvlAiVbpPHp3eDRWbdzUgtkK1a7YiDNyQ==
+"@redocly/config@0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.22.0.tgz#b2454f472f9d2b217d56f82e4f28d346901f3242"
+  integrity sha512-gAy93Ddo01Z3bHuVdPWfCwzgfaYgMdaZPcfL7JZ7hWJoK9V0lXDbigTWkhiPFAaLWzbOJ+kbUQG1+XwIm0KRGQ==
 
 "@redocly/config@^0.49.0":
   version "0.49.0"
@@ -7238,10 +7248,10 @@
   dependencies:
     json-schema-to-ts "2.7.2"
 
-"@redocly/openapi-core@2.31.5":
-  version "2.31.5"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.31.5.tgz#e93166f29432d33801e36a37307004069d73a011"
-  integrity sha512-300dxFZLlaVd4KxrS7OGTIOTL7T20DBmhAnP3QuRYvL7gCchOevmPGRrk+sx48xtMc99hpgPcX5Ap0XiFIjf4A==
+"@redocly/openapi-core@2.31.6":
+  version "2.31.6"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-2.31.6.tgz#3103c3876a1f53024edad440622a99e1782c6b23"
+  integrity sha512-h+zh6UQ4e5oRspUZUaNl1XRXwMf0ENHbGLKIDFAjhV6JACpqUrcBxkPKHY/uCXGdJSCzxVP3twCrnOWB0iMVuw==
   dependencies:
     "@redocly/ajv" "^8.18.1"
     "@redocly/config" "^0.49.0"
@@ -7254,30 +7264,30 @@
     pluralize "^8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/openapi-core@^1.4.0":
-  version "1.34.5"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.34.5.tgz#9c2cf901d1098ceb626e789e2065c762fe63727f"
-  integrity sha512-0EbE8LRbkogtcCXU7liAyC00n9uNG9hJ+eMyHFdUsy9lB/WGqnEBgwjA9q2cyzAVcdTkQqTBBU1XePNnN3OijA==
+"@redocly/openapi-core@^1.34.15":
+  version "1.34.15"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.34.15.tgz#2988f8a51ca6352b5b53093dfe6206ed75120aa0"
+  integrity sha512-HAwCnNyKcs5XGQqms+9t7OdAPM/5TDstmhF+0i7tdCFato2QKuYIlyWETwkXd8c5zbltr1oB+6y9NTeQLr2d6Q==
   dependencies:
-    "@redocly/ajv" "^8.11.2"
-    "@redocly/config" "^0.22.0"
-    colorette "^1.2.0"
-    https-proxy-agent "^7.0.5"
-    js-levenshtein "^1.1.6"
-    js-yaml "^4.1.0"
-    minimatch "^5.0.1"
-    pluralize "^8.0.0"
+    "@redocly/ajv" "8.11.2"
+    "@redocly/config" "0.22.0"
+    colorette "1.4.0"
+    https-proxy-agent "7.0.6"
+    js-levenshtein "1.1.6"
+    js-yaml "4.1.1"
+    minimatch "5.1.9"
+    pluralize "8.0.0"
     yaml-ast-parser "0.0.43"
 
-"@redocly/respect-core@2.31.5":
-  version "2.31.5"
-  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.31.5.tgz#e9aaa0b3036ada1f59ea2b563c646f31aa2b91bd"
-  integrity sha512-pLXKw2HeLMrGFwLVZX6TVznNn8EA++6PGL5SQ1k53TvlkYHzgQ+tc8MI7HQQdg5l66mDVZZVkhc/yZVjNPlLmw==
+"@redocly/respect-core@2.31.6":
+  version "2.31.6"
+  resolved "https://registry.yarnpkg.com/@redocly/respect-core/-/respect-core-2.31.6.tgz#6ce08edcca1702a46e0631779f07fe6a1597a84d"
+  integrity sha512-xLsbP+jRVTaYKMnx44nx4p9UqVGjZGqyq6bsYlQQWeLem83OrU4EPE7vKKIdWTuwtQkEQ1ousEuenW7lqeqFnA==
   dependencies:
     "@faker-js/faker" "^7.6.0"
     "@noble/hashes" "^1.8.0"
     "@redocly/ajv" "^8.18.1"
-    "@redocly/openapi-core" "2.31.5"
+    "@redocly/openapi-core" "2.31.6"
     ajv "npm:@redocly/ajv@8.18.1"
     better-ajv-errors "^2.0.3"
     colorette "^2.0.20"
@@ -12250,12 +12260,10 @@ agent-base@6:
   dependencies:
     debug "4"
 
-agent-base@^7.0.2, agent-base@^7.1.0, agent-base@^7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-7.1.1.tgz#bdbded7dfb096b751a2a087eeeb9664725b2e317"
-  integrity sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==
-  dependencies:
-    debug "^4.3.4"
+agent-base@^7.0.2, agent-base@^7.1.0, agent-base@^7.1.1, agent-base@^7.1.2:
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-7.1.4.tgz#e3cd76d4c548ee895d3c3fd8dc1f6c5b9032e7a8"
+  integrity sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==
 
 agentkeepalive@4.5.0, agentkeepalive@^4.1.0, agentkeepalive@^4.2.1, agentkeepalive@^4.5.0:
   version "4.5.0"
@@ -14766,7 +14774,7 @@ color@^4.2.3:
     color-convert "^2.0.1"
     color-string "^1.9.0"
 
-colorette@^1.2.0:
+colorette@1.4.0, colorette@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
   integrity sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==
@@ -19709,6 +19717,14 @@ https-proxy-agent@5.0.0:
     agent-base "6"
     debug "4"
 
+https-proxy-agent@7.0.6, https-proxy-agent@^7.0.0, https-proxy-agent@^7.0.1, https-proxy-agent@^7.0.2, https-proxy-agent@^7.0.3, https-proxy-agent@^7.0.5:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-7.0.6.tgz#da8dfeac7da130b05c2ba4b59c9b6cd66611a6b9"
+  integrity sha512-vK9P5/iUfdl95AI+JVyUuIcVtd4ofvtrOr3HNtM2yxC9bnMbEdp3x01OhQNnjb8IJYi38VlTE3mBXwcfvywuSw==
+  dependencies:
+    agent-base "^7.1.2"
+    debug "4"
+
 https-proxy-agent@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz#702b71fb5520a132a66de1f67541d9e62154d82b"
@@ -19723,14 +19739,6 @@ https-proxy-agent@^5.0.0, https-proxy-agent@^5.0.1:
   integrity "sha1-xZ7yJKBP6LdU89sAY6Jeow0ABdY= sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA=="
   dependencies:
     agent-base "6"
-    debug "4"
-
-https-proxy-agent@^7.0.0, https-proxy-agent@^7.0.1, https-proxy-agent@^7.0.2, https-proxy-agent@^7.0.3, https-proxy-agent@^7.0.5:
-  version "7.0.5"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-7.0.5.tgz#9e8b5013873299e11fab6fd548405da2d6c602b2"
-  integrity sha512-1e4Wqeblerz+tMKPIq2EMGiiWW1dIjZOksyHWSUm1rmuvw/how9hBHZ38lAGj5ID4Ik6EdkOw7NmWPy6LAwalw==
-  dependencies:
-    agent-base "^7.0.2"
     debug "4"
 
 httpyac@6.16.7:
@@ -21058,7 +21066,7 @@ js-base64@^3.7.7:
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.7.tgz#e51b84bf78fbf5702b9541e2cb7bfcb893b43e79"
   integrity sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==
 
-js-levenshtein@^1.1.6:
+js-levenshtein@1.1.6, js-levenshtein@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
   integrity sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==
@@ -21092,6 +21100,13 @@ js-yaml@4.1.0:
   dependencies:
     argparse "^2.0.1"
 
+js-yaml@4.1.1, js-yaml@^4.0.0, js-yaml@^4.1.0, js-yaml@~4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.1.tgz#854c292467705b699476e1a2decc0c8a3458806b"
+  integrity sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==
+  dependencies:
+    argparse "^2.0.1"
+
 js-yaml@^3.10.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.14.1, js-yaml@^3.6.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
@@ -21099,13 +21114,6 @@ js-yaml@^3.10.0, js-yaml@^3.13.0, js-yaml@^3.13.1, js-yaml@^3.14.1, js-yaml@^3.6
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
-
-js-yaml@^4.0.0, js-yaml@^4.1.0, js-yaml@~4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.1.tgz#854c292467705b699476e1a2decc0c8a3458806b"
-  integrity sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==
-  dependencies:
-    argparse "^2.0.1"
 
 jsbn@1.1.0:
   version "1.1.0"
@@ -23713,6 +23721,13 @@ minimatch@3.1.2, minimatch@^3.0.2, minimatch@^3.0.4, minimatch@^3.0.5, minimatch
   dependencies:
     brace-expansion "^1.1.7"
 
+minimatch@5.1.9, minimatch@^5.0.1, minimatch@^5.1.0:
+  version "5.1.9"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.9.tgz#1293ef15db0098b394540e8f9f744f9fda8dee4b"
+  integrity sha512-7o1wEA2RyMP7Iu7GNba9vc0RWWGACJOCZBJX2GJWip0ikV+wcOsgVuY9uE8CPiyQhkGFSlhuSkZPavN7u1c2Fw==
+  dependencies:
+    brace-expansion "^2.0.1"
+
 minimatch@9.0.3:
   version "9.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.3.tgz#a6e00c3de44c3a542bfaae70abfc22420a6da825"
@@ -23733,13 +23748,6 @@ minimatch@^4.2.3:
   integrity sha512-lIUdtK5hdofgCTu3aT0sOaHsYR37viUuIc0rwnnDXImbwFRcumyLMeZaM0t0I/fgxS6s6JMfu0rLD1Wz9pv1ng==
   dependencies:
     brace-expansion "^1.1.7"
-
-minimatch@^5.0.1, minimatch@^5.1.0:
-  version "5.1.6"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.6.tgz#1cfcb8cf5522ea69952cd2af95ae09477f122a96"
-  integrity sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==
-  dependencies:
-    brace-expansion "^2.0.1"
 
 minimatch@^8.0.2:
   version "8.0.4"
@@ -24946,10 +24954,10 @@ openai@4.55.0, openai@^4.38.0:
     formdata-node "^4.3.2"
     node-fetch "^2.6.7"
 
-openapi-sampler@^1.5.0, openapi-sampler@^1.7.1:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/openapi-sampler/-/openapi-sampler-1.7.2.tgz#2bb1087af0b77007829d788536fa2218171d0aad"
-  integrity sha512-OKytvqB5XIaTgA9xtw8W8UTar+uymW2xPVpFN0NihMtuHPdPTGxBEhGnfFnJW5g/gOSIvkP+H0Xh3XhVI9/n7g==
+openapi-sampler@^1.6.2, openapi-sampler@^1.7.1:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/openapi-sampler/-/openapi-sampler-1.7.4.tgz#453c50aa6fa8b1d02cb83a399c5aad965deb0e79"
+  integrity sha512-CKS/rd5ucPCuEDbJnjGDXZTsuGWcmv53aCmQx7soZlPEONUGN4af0/dY5+THRFZraSEjeA78nlfzdFswC/N5SA==
   dependencies:
     "@types/json-schema" "^7.0.7"
     fast-xml-parser "^5.5.1"
@@ -26865,7 +26873,7 @@ react-dock@^0.2.4:
     lodash.debounce "^3.1.1"
     prop-types "^15.5.8"
 
-react-dom@18.2.0, "react-dom@^17.0.0 || ^18.2.0 || ^19.2.1", react-dom@^17.0.2:
+react-dom@18.2.0, "react-dom@^17.0.0 || ^18.2.0 || ^19.2.7", react-dom@^17.0.2:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -27172,7 +27180,7 @@ react-virtuoso@4.7.10:
   resolved "https://registry.yarnpkg.com/react-virtuoso/-/react-virtuoso-4.7.10.tgz#6d4e951d4a62b57f012e411fbb8a16ff84d3732b"
   integrity sha512-l+fnBf/G1Fp6pHCnhFq2Ra4lkZtT6c5XrS9rCS0OA6de7WGLZviCo0y61CUZZG79TeAw3L7O4czeNPiqh9CIrg==
 
-react@*, react@18.2.0, "react@^17.0.0 || ^18.2.0 || ^19.2.1", react@^17.0.2, react@^18.2.0:
+react@*, react@18.2.0, "react@^17.0.0 || ^18.2.0 || ^19.2.7", react@^17.0.2, react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -27389,12 +27397,12 @@ redis@4.6.12:
     "@redis/search" "1.1.6"
     "@redis/time-series" "1.0.5"
 
-redoc@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/redoc/-/redoc-2.5.1.tgz#12f57c08c460178c06a6440222f111fe69ee2b4f"
-  integrity sha512-LmqA+4A3CmhTllGG197F0arUpmChukAj9klfSdxNRemT9Hr07xXr7OGKu4PHzBs359sgrJ+4JwmOlM7nxLPGMg==
+redoc@2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/redoc/-/redoc-2.5.3.tgz#f44692cbdf81bb2077fb38358885d976e6e27f88"
+  integrity sha512-bBbat+Sx6xKWdyoCGTtA0BWeTEW9Vs4VnEja7q7ZLOk4IM7cHQLrf+kDxWF6dKeKxT8kOBnoy/OsNXCeLttpyQ==
   dependencies:
-    "@redocly/openapi-core" "^1.4.0"
+    "@redocly/openapi-core" "^1.34.15"
     classnames "^2.3.2"
     decko "^1.2.0"
     dompurify "^3.2.4"
@@ -27404,7 +27412,7 @@ redoc@2.5.1:
     mark.js "^8.11.1"
     marked "^4.3.0"
     mobx-react "9.2.0"
-    openapi-sampler "^1.5.0"
+    openapi-sampler "^1.6.2"
     path-browserify "^1.0.1"
     perfect-scrollbar "^1.5.5"
     polished "^4.2.2"
@@ -29625,10 +29633,10 @@ style-vendorizer@^2.0.0:
   resolved "https://registry.yarnpkg.com/style-vendorizer/-/style-vendorizer-2.2.3.tgz#e18098fd981c5884c58ff939475fbba74aaf080c"
   integrity sha512-/VDRsWvQAgspVy9eATN3z6itKTuyg+jW1q6UoTCQCFRqPDw8bi3E1hXIKnGw5LvXS2AQPuJ7Af4auTLYeBOLEg==
 
-styled-components@6.4.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-6.4.1.tgz#5b44c0d9140a28458eba931f53253613a99ebe30"
-  integrity sha512-ADu2dF53esUzzM4I0ewxhxFtsDd6v4V6dNkg3vG0iFKhnt06sJneTZnRvujAosZwW0XD58IKgGMQoqri4wHRqg==
+styled-components@6.4.2:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-6.4.2.tgz#2e92f7b8a1e49f5791c80c864eddf215dd1046c6"
+  integrity sha512-xZBhBJsMtGqb+aKcwKgaT+BtuFums9VynX2JRvXJGTx5UfZzN12rk5r4nVdhXYvRw+hE7yiYxVrOqJZaK2+Txg==
   dependencies:
     "@emotion/is-prop-valid" "1.4.0"
     css-to-react-native "3.2.0"
@@ -31221,6 +31229,11 @@ upper-case@^2.0.2:
   integrity "sha1-2JgQgj+qsd8VSbfZenb4Ziuub3o= sha512-KgdgDGJt2TpuwBUIjgG6lzw2GWFRCW9Qkfkiv0DxqHHLYJHmtmdUIKcZd8rHgFSjopVTlw6ggzCm1b8MFQwikg=="
   dependencies:
     tslib "^2.0.3"
+
+uri-js-replace@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/uri-js-replace/-/uri-js-replace-1.0.1.tgz#c285bb352b701c9dfdaeffc4da5be77f936c9048"
+  integrity sha512-W+C9NWNLFOoBI2QWDp4UT9pv65r2w5Cx+3sTYFvtMdDBxkKt1syCqsUdSFAChbEe1uK5TfS04wt/nGwmaeIQ0g==
 
 uri-js@^4.2.2:
   version "4.4.1"
