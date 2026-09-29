@@ -7112,10 +7112,10 @@
   resolved "https://registry.yarnpkg.com/@redis/time-series/-/time-series-1.0.5.tgz#a6d70ef7a0e71e083ea09b967df0a0ed742bc6ad"
   integrity sha512-IFjIgTusQym2B5IZJG3XKr5llka7ey84fw/NOYqESP5WUfQs9zz1ww/9+qoz4ka/S6KcGBodzlCeZ5UImKbscg==
 
-"@redocly/cli@2.54.2":
-  version "2.54.2"
-  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.54.2.tgz#732acf9edc4b59074ab4a1f701bcfe0189f59c06"
-  integrity sha512-YQ53kSQV/zpYSdY3WiQvf7JxuVLD8jTEX37YOY6MS+G3tyHDCeONpUkAt6qr9n2/nmGm6m+A+PB/mGFvhkt1uQ==
+"@redocly/cli@2.54.3":
+  version "2.54.3"
+  resolved "https://registry.yarnpkg.com/@redocly/cli/-/cli-2.54.3.tgz#efc850f8ba5ac61b2647838a35479127fa5896a9"
+  integrity sha512-tgjCjKm9NjcbN0N04dylwUw8eZzematq07JHm+dVyPkAfA/eZEN57En7jpUYrPvwOb53MJLfDB/0qJ5iz/4eHQ==
 
 "@repeaterjs/repeater@^3.0.4":
   version "3.0.4"
