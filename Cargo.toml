@@ -97,7 +97,7 @@ jsonptr = { version = "=0.7.1", default-features = false }
 multiaddr = { version = "=0.18.2", default-features = false }
 multistream-select = { version = "=0.13.0", default-features = false }
 libp2p-core = { version = "=0.44.0", default-features = false }
-libp2p-identity = { version = "=0.3.0", default-features = false }
+libp2p-identity = { version = "=0.3.1", default-features = false }
 libp2p-ping = { version = "=0.48.0", default-features = false }
 libp2p-swarm = { version = "=0.48.0", default-features = false }
 libp2p-yamux = { version = "=0.48.0", default-features = false }
