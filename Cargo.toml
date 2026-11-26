@@ -69,7 +69,7 @@ validation.path = "libs/@local/hash-validation"
 error-stack = { version = "=0.7.1", default-features = false }
 
 # Public dependencies
-ahash = { version = "=0.8.13", default-features = false }
+ahash = { version = "=0.8.14", default-features = false }
 ariadne = { version = "=0.6.0", default-features = false }
 aws-types = { version = "=1.7.0", default-features = false }
 axum = "0.8.0"
